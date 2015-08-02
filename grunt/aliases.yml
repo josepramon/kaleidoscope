@@ -1,0 +1,22 @@
+default:
+  description: 'Default task, rebuilds everything'
+  tasks:
+    - stylus
+    - docs
+
+
+styles:
+  description: ''
+  tasks:
+    - clean:dist
+    - copy:fonts
+    - stylus
+
+
+docs:
+  description: ''
+  tasks:
+    - clean:docs
+    - copy:docsFonts
+    - copy:docsCss
+    - assemble
