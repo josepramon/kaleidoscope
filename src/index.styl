@@ -1,0 +1,85 @@
+/**
+ * My fucking awesome bootstrap theme
+ * v. 0.0.1
+ * © blablabla
+ */
+
+
+// Import config:
+// ---------------------------------------------------------------------
+// The built files on the `dist` directory include all the components.
+// If you need to create a lightweight version removing non needed components,
+// just set to false any of the following values before importing this file.
+$import-grid                  ?= true
+$import-tables                ?= true
+$import-forms                 ?= true
+$import-buttons               ?= true
+$import-component-animations  ?= true
+$import-dropdowns             ?= true
+$import-button-groups         ?= true
+$import-input-groups          ?= true
+$import-navs                  ?= true
+$import-navbar                ?= true
+$import-breadcrumbs           ?= true
+$import-pagination            ?= true
+$import-pager                 ?= true
+$import-labels                ?= true
+$import-badges                ?= true
+$import-jumbotron             ?= true
+$import-thumbnails            ?= true
+$import-alerts                ?= true
+$import-progress-bars         ?= true
+$import-media                 ?= true
+$import-list-group            ?= true
+$import-panels                ?= true
+$import-responsive-embed      ?= true
+$import-wells                 ?= true
+$import-close                 ?= true
+$import-modals                ?= true
+$import-tooltip               ?= true
+$import-popovers              ?= true
+$import-carousel              ?= true
+
+
+// Web fonts:
+// ---------------------------------------------------------------------
+// Webfonts used for the main text and titles. This are the default
+// fonts used on this theme. If the `$font-family-sans-serif` and
+// `$headings-font-family` values are set before importing this file,
+// the default values will not be loaded.
+unless $font-family-sans-serif is defined
+  @import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700')
+
+unless $headings-font-family is defined
+  @import url('http://fonts.googleapis.com/css?family=Armata')
+
+
+// Config:
+// ---------------------------------------------------------------------
+// Bootstrap components config. All the variables are conditionally
+// set (?=) so they can be overrided without altering the files on
+// the config directory
+@import 'config'
+
+
+// Base styles:
+// ---------------------------------------------------------------------
+// stuff not deffined in bootstrap but applied before the bootstrap
+// deffinitions and the overrides to avoid using the !important flag
+@import 'base'
+
+
+// Bootstrap components:
+// ---------------------------------------------------------------------
+@import 'components-bootstrap'
+
+
+// Custom components:
+// ---------------------------------------------------------------------
+@import 'components-custom'
+
+
+// Overrides and extensions:
+// ---------------------------------------------------------------------
+// add additional stuff not deffined on bootstrap or override styles
+@import 'overrides'
