@@ -1,0 +1,22 @@
+{
+  "name": "Mosaiqo Theme",
+  "version": "0.0.1",
+  "description": "",
+  "authors": [
+    "Josep Ramon Camps Lladó <jrcamps@mosaiqo.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "main": "",
+  "dependencies": {
+    "bootstrap-stylus": "~4.0.5"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "package.json",
+    "node_modules",
+    "gruntfile.coffee",
+    "grunt",
+    "doc-src"
+  ]
+}
