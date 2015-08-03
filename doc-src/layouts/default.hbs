@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head }}
+</head>
+<body>
+
+  {{> header }}
+
+  <div class="container bs-docs-container">
+    <div class="row">
+
+      <div class="col-md-9" role="main">
+        {{> body }}
+      </div>
+
+      <div class="col-md-3" role="complementary">
+
+        {{#is pageId 'css'}}
+          {{> docsNav nav_css.nav }}
+        {{/is}}
+
+        {{#is pageId 'components'}}
+          {{> docsNav nav_components.nav }}
+        {{/is}}
+
+        {{#is pageId 'js'}}
+          {{> docsNav nav_js.nav }}
+        {{/is}}
+
+      </div>
+
+
+    </div>
+  </div>
+
+  {{> footer }}
+</body>
+</html>

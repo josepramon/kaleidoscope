@@ -1,0 +1,241 @@
+nav:
+  -
+    title:  "Overview"
+    anchor: "#js-overview"
+    sections:
+      -
+        title:  "Individual or compiled"
+        anchor: "#js-individual-compiled"
+      -
+        title:  "Data attributes"
+        anchor: "#js-data-attrs"
+      -
+        title:  "Programmatic API"
+        anchor: "#js-programmatic-api"
+      -
+        title:  "No conflict"
+        anchor: "#js-noconflict"
+      -
+        title:  "Events"
+        anchor: "#js-events"
+      -
+        title:  "Version numbers"
+        anchor: "#js-version-nums"
+      -
+        title:  "When JavaScript is disabled"
+        anchor: "#js-disabled"
+      -
+        title:  "Third-party libraries"
+        anchor: "#callout-third-party-libs"
+  -
+    title:  "Transitions"
+    anchor: "#js-transitions"
+  -
+    title:  "Modal"
+    anchor: "#js-modals"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#modals-examples"
+      -
+        title:  "Sizes"
+        anchor: "#modals-sizes"
+      -
+        title:  "Remove animation"
+        anchor: "#modals-remove-animation"
+      -
+        title:  "Varying content based on trigger button"
+        anchor: "#modals-related-target"
+      -
+        title:  "Usage"
+        anchor: "#modals-usage"
+      -
+        title:  "Options"
+        anchor: "#modals-options"
+      -
+        title:  "Methods"
+        anchor: "#modals-methods"
+      -
+        title:  "Events"
+        anchor: "#modals-events"
+  -
+    title:  "Dropdown"
+    anchor: "#dropdowns"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#dropdowns-examples"
+      -
+        title:  "Usage"
+        anchor: "#dropdowns-usage"
+      -
+        title:  "Methods"
+        anchor: "#dropdowns-methods"
+      -
+        title:  "Events"
+        anchor: "#dropdowns-events"
+  -
+    title:  "Scrollspy"
+    anchor: "#scrollspy"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#scrollspy-examples"
+      -
+        title:  "Usage"
+        anchor: "#scrollspy-usage"
+      -
+        title:  "Methods"
+        anchor: "#scrollspy-methods"
+      -
+        title:  "Options"
+        anchor: "#scrollspy-options"
+      -
+        title:  "Events"
+        anchor: "#scrollspy-events"
+  -
+    title:  "Tab"
+    anchor: "#tabs"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#tabs-examples"
+      -
+        title:  "Usage"
+        anchor: "#tabs-usage"
+      -
+        title:  "Methods"
+        anchor: "#tabs-methods"
+      -
+        title:  "Events"
+        anchor: "#tabs-events"
+  -
+    title:  "Tooltip"
+    anchor: "#tooltips"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#tooltips-examples"
+      -
+        title:  "Usage"
+        anchor: "#tooltips-usage"
+      -
+        title:  "Options"
+        anchor: "#tooltips-options"
+      -
+        title:  "Methods"
+        anchor: "#tooltips-methods"
+      -
+        title:  "Events"
+        anchor: "#tooltips-events"
+  -
+    title:  "Popover"
+    anchor: "#popovers"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#popovers-examples"
+      -
+        title:  "Usage"
+        anchor: "#popovers-usage"
+      -
+        title:  "Options"
+        anchor: "#popovers-options"
+      -
+        title:  "Methods"
+        anchor: "#popovers-methods"
+      -
+        title:  "Events"
+        anchor: "#popovers-events"
+  -
+    title:  "Alert"
+    anchor: "#alerts"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#alerts-examples"
+      -
+        title:  "Usage"
+        anchor: "#alerts-usage"
+      -
+        title:  "Methods"
+        anchor: "#alerts-methods"
+      -
+        title:  "Events"
+        anchor: "#alerts-events"
+  -
+    title:  "Button"
+    anchor: "#buttons"
+    sections:
+      -
+        title:  "Stateful"
+        anchor: "#buttons-stateful"
+      -
+        title:  "Single toggle"
+        anchor: "#buttons-single-toggle"
+      -
+        title:  "Checkbox / Radio"
+        anchor: "#buttons-checkbox-radio"
+      -
+        title:  "Methods"
+        anchor: "#buttons-methods"
+  -
+    title:  "Collapse"
+    anchor: "#collapse"
+    sections:
+      -
+        title:  "Example"
+        anchor: "#collapse-example"
+      -
+        title:  "Accordion example"
+        anchor: "#collapse-example-accordion"
+      -
+        title:  "Usage"
+        anchor: "#collapse-usage"
+      -
+        title:  "Options"
+        anchor: "#collapse-options"
+      -
+        title:  "Methods"
+        anchor: "#collapse-methods"
+      -
+        title:  "Events"
+        anchor: "#collapse-events"
+  -
+    title:  "Carousel"
+    anchor: "#carousel"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#carousel-examples"
+      -
+        title:  "Usage"
+        anchor: "#carousel-usage"
+      -
+        title:  "Options"
+        anchor: "#carousel-options"
+      -
+        title:  "Methods"
+        anchor: "#carousel-methods"
+      -
+        title:  "Events"
+        anchor: "#carousel-events"
+  -
+    title:  "Affix"
+    anchor: "#affix"
+    sections:
+      -
+        title:  "Examples"
+        anchor: "#affix-examples"
+      -
+        title:  "Usage"
+        anchor: "#affix-usage"
+      -
+        title:  "Options"
+        anchor: "#affix-options"
+      -
+        title:  "Methods"
+        anchor: "#affix-methods"
+      -
+        title:  "Events"
+        anchor: "#affix-events"

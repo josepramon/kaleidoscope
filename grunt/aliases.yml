@@ -17,6 +17,7 @@ docs:
   description: ''
   tasks:
     - clean:docs
-    - copy:docsFonts
+    - copy:docsAssets
     - copy:docsCss
+    - copy:docsFonts
     - assemble
