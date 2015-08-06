@@ -9,7 +9,8 @@
   "private": true,
   "main": "",
   "dependencies": {
-    "bootstrap-stylus": "~4.0.5"
+    "bootstrap-stylus": "~4.0.5",
+    "selectize-bootstrap-stylus": "~0.0.3"
   },
   "devDependencies": {},
   "ignore": [

@@ -34,6 +34,8 @@ unless $headings-font-family is defined
 // the config directory
 @require 'config'
 
+// Configuration for other 3rd party libs
+@require 'config/vendor/*'
 
 
 // Base styles:
@@ -50,10 +52,11 @@ unless $headings-font-family is defined
 
 // Custom components:
 // ---------------------------------------------------------------------
-@import 'components-custom'
+@require 'extras'
 
 
 // Overrides:
 // ---------------------------------------------------------------------
 // add additional stuff not deffined on bootstrap or override styles
 @require 'overrides'
+@require 'overrides/vendor'
