@@ -1,0 +1,24 @@
+nav:
+  -
+    title:  "Overview"
+    anchor: "#extras-overview"
+  -
+    title:  "Buttons"
+    anchor: "#buttons"
+    sections:
+      -
+        title:  "Inverted buttons"
+        anchor: "#buttons-inverted"
+      -
+        title:  "Circular buttons"
+        anchor: "#buttons-circular"
+  -
+    title:  "Labels"
+    anchor: "#labels"
+    sections:
+      -
+        title:  "Ribbon labels"
+        anchor: "#labels-ribbon"
+      -
+        title:  "Corner ribbon labels"
+        anchor: "#labels-ribbon-corner"

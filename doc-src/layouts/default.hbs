@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   {{> head }}
+
 </head>
-<body>
+<body class="{{ pageId }}">
 
   {{> header }}
 
   <div class="container bs-docs-container">
     <div class="row">
 
-      <div class="col-md-9" role="main">
+      <main class="col-md-{{#is pageId 'home'}}12{{else}}9{{/is}}" role="main">
         {{> body }}
-      </div>
+      </main>
 
-      <div class="col-md-3" role="complementary">
+      {{#isnt pageId 'home'}}
+        <aside class="col-md-3" role="complementary">
 
-        {{#is pageId 'css'}}
-          {{> docsNav nav_css.nav }}
-        {{/is}}
+          {{#is pageId 'css'}}
+            {{> docsNav nav_css.nav }}
+          {{/is}}
 
-        {{#is pageId 'components'}}
-          {{> docsNav nav_components.nav }}
-        {{/is}}
+          {{#is pageId 'components'}}
+            {{> docsNav nav_components.nav }}
+          {{/is}}
 
-        {{#is pageId 'js'}}
-          {{> docsNav nav_js.nav }}
-        {{/is}}
+          {{#is pageId 'js'}}
+            {{> docsNav nav_js.nav }}
+          {{/is}}
 
-      </div>
+          {{#is pageId 'extras'}}
+            {{> docsNav nav_extras.nav }}
+          {{/is}}
 
+        </aside>
+      {{/isnt}}
 
     </div>
   </div>
 
   {{> footer }}
+
+  {{> scripts }}
+
 </body>
 </html>

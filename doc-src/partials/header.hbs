@@ -1,3 +1,15 @@
-<div id="theme-head">
-    <h1>Mosaiqo theme</h1>
-</div>
+<header id="theme-header">
+  <h1>
+    <a href="index.html">
+      Mosaiqo theme
+    </a>
+  </h1>
+  <nav>
+    <ul>
+      <li><a class="" href="css.html" {{#is pageId 'css'}}class="active"{{/is}}>CSS</a></li>
+      <li><a class="" href="components.html" {{#is pageId 'components'}}class="active"{{/is}}>Components</a></li>
+      <li><a class="" href="javascript.html" {{#is pageId 'javascript'}}class="active"{{/is}}>Javascript</a></li>
+      <li><a class="" href="extras.html" {{#is pageId 'extras'}}class="active"{{/is}}>Extras</a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,92 +1,11 @@
 ---
-title:       Theme
-description: "Theme test"
+title:  Theme
+pageId: home
 ---
-
-<style type="text/css">
-.example {
-  padding: 10px 0;
-  border-bottom: dashed 1px #ccc;
-}
-.example h2 {
-  margin-bottom: 20px;
-}
-.example [class*=col-] {
-    margin-bottom: 10px;
-}
-.blank {
-  display: none;
-}
-.test-block {
-  position: relative;
-  padding: 1em;
-  background-color: #f7f7f7;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-.example-dropdown h2+.dropdown-menu,
-.example-modal .modal,
-.example-popover .popover {
-  display: block;
-  position: relative;
-}
-.color-swatches .swatches {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background-color: #FFF;
-    width: 100%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
-}
-.color-swatches .light,
-.color-swatches .dark {
-    width: 50%;
-    height: 50px;
-}
-.color-swatches .light {
-    -webkit-border-radius: 4px 0 0 0;
-    -moz-border-radius: 4px 0 0 0;
-    border-radius: 4px 0 0 0;
-}
-.color-swatches .dark {
-    -webkit-border-radius: 0 4px 0 0;
-    -moz-border-radius: 0 4px 0 0;
-    border-radius: 0 4px 0 0;
-}
-.color-swatches .infos {
-    padding: 5px 10px;
-}
-.color-swatches .infos h4,
-.color-swatches .infos p {
-    margin: 0;
-}
-.color-swatches .infos h4 {
-    margin-bottom: 3px;
-    font-weight: bold;
-    font-size: 14px;
-}
-.color-swatches .infos p {
-    font-size: 12px;
-}
-#theme-head {
-  padding: 20px;
-  background-color: #434A54;
-}
-#theme-head h1 {
-  width: 200px;
-  height: 60px;
-  overflow: hidden;
-  text-indent: -99em;
-  background-image: url(../../assets/images/logos/logo200x60.png);
-}
-</style>
-
-
 
 
 <!--documents-->
-<div class="container documents">
+<div class="documents">
   <!-- Color Swatches
   ================================================== -->
   <div class="example">
@@ -419,6 +338,44 @@ description: "Theme test"
       </div>
     </div>
   </div>
+
+  <div class="example">
+    <h2 class="example-title">Inverted buttons</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <button type="button" class="btn btn-block inverted">Normal</button>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-default btn-block inverted">Default</button>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-primary btn-block inverted">Primary</button>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-success btn-block inverted">Success</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <button type="button" class="btn btn-info btn-block inverted">Info</button>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-warning btn-block inverted">Warning</button>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-danger btn-block inverted">Danger</button>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-link btn-block inverted">Link</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="example">
+    <h2 class="example-title">Circular buttons</h2>
+
+  </div>
+
   <!-- Button Groups
   ================================================== -->
   <div class="example">
@@ -1455,7 +1412,7 @@ description: "Theme test"
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
           <h4>Well done!</h4>
           <p>Change this and that and try again. <a class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-          <p><a class="btn btn-primary" href="#">Take this action</a> <a class="btn btn-link" href="#">Or do this</a></p>
+          <p><a class="btn btn-info" href="#">Take this action</a> <a class="btn btn-link" href="#">Or do this</a></p>
         </div>
       </div>
       <div class="col-md-6">
@@ -2460,13 +2417,4 @@ description: "Theme test"
     </div>
   </div>
 </div>
-<script type="text/javascript">
-$(function(){
-  $('.tooltip-demo').tooltip({
-    selector: "[data-toggle=tooltip]",
-    container: "body"
-  });
-  $('#accordion1').collapse();
-  $('#accordion2').collapse();
-});
-</script>
+

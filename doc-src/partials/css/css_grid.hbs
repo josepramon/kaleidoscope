@@ -22,7 +22,7 @@
   <p>We use the following media queries in our Less files to create the key breakpoints in our grid system.</p>
 
 {{#markdown}}
-```scss
+```css
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -40,7 +40,7 @@
   <p>We occasionally expand on these media queries to include a <code>max-width</code> to limit CSS to a narrower set of devices.</p>
 
 {{#markdown}}
-```scss
+```css
 @media (max-width: @screen-xs-max) { ... }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
@@ -434,7 +434,7 @@
   <p>Variables determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.</p>
 
 {{#markdown}}
-```scss
+```css
 @grid-columns:              12;
 @grid-gutter-width:         30px;
 @grid-float-breakpoint:     768px;
@@ -446,7 +446,7 @@
   <p>Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.</p>
 
 {{#markdown}}
-```scss
+```css
 // Creates a wrapper for a series of columns
 .make-row(@gutter: @grid-gutter-width) {
   // Then clear the floated columns
@@ -586,7 +586,7 @@
   <p>You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.</p>
 
 {{#markdown}}
-```scss
+```css
 .wrapper {
   .make-row();
 }

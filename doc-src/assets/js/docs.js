@@ -1,3 +1,122 @@
+!function ($) {
+  'use strict';
+
+  $(function () {
+
+    $('code[class|="language"]').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+
+
+    $('#selectize-input-tags').selectize({
+      delimiter: ',',
+      persist: false,
+      create: function(input) {
+        return {
+          value: input,
+          text: input
+        }
+      }
+    });
+
+    $('#selectize-input-tags2').selectize({
+      plugins: ['remove_button'],
+      delimiter: ',',
+      persist: false,
+      create: function(input) {
+        return {
+          value: input,
+          text: input
+        }
+      }
+    });
+
+
+    var REGEX_EMAIL = '([a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@' +
+      '(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)';
+
+    $('#selectize-select-to').selectize({
+      persist: false,
+      maxItems: null,
+      valueField: 'email',
+      labelField: 'name',
+      searchField: ['name', 'email'],
+      options: [
+        {email: 'brian@thirdroute.com', name: 'Brian Reavis'},
+        {email: 'nikola@tesla.com', name: 'Nikola Tesla'},
+        {email: 'someone@gmail.com'}
+      ],
+      render: {
+        item: function(item, escape) {
+          return '<div>' +
+            (item.name ? '<span class="selectize-example-name">' + escape(item.name) + '</span>' : '') +
+            (item.email ? '<span class="selectize-example-email">' + escape(item.email) + '</span>' : '') +
+          '</div>';
+        },
+        option: function(item, escape) {
+          var label = item.name || item.email;
+          var caption = item.name ? item.email : null;
+          return '<div>' +
+            '<span class="selectize-example-label">' + escape(label) + '</span>' +
+            (caption ? '<span class="selectize-example-caption">' + escape(caption) + '</span>' : '') +
+          '</div>';
+        }
+      },
+      createFilter: function(input) {
+        var match, regex;
+
+        // email@address.com
+        regex = new RegExp('^' + REGEX_EMAIL + '$', 'i');
+        match = input.match(regex);
+        if (match) return !this.options.hasOwnProperty(match[0]);
+
+        // name <email@address.com>
+        regex = new RegExp('^([^<]*)\<' + REGEX_EMAIL + '\>$', 'i');
+        match = input.match(regex);
+        if (match) return !this.options.hasOwnProperty(match[2]);
+
+        return false;
+      },
+      create: function(input) {
+        if ((new RegExp('^' + REGEX_EMAIL + '$', 'i')).test(input)) {
+          return {email: input};
+        }
+        var match = input.match(new RegExp('^([^<]*)\<' + REGEX_EMAIL + '\>$', 'i'));
+        if (match) {
+          return {
+            email : match[2],
+            name  : $.trim(match[1])
+          };
+        }
+        alert('Invalid email address.');
+        return false;
+      }
+    });
+
+
+    $('#selectize-select-gear').selectize({
+      sortField: 'text'
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+  });
+
+
+}(jQuery);
+
+
+
+
 // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
 // IT'S ALL JUST JUNK FOR OUR DOCS!
 // ++++++++++++++++++++++++++++++++++++++++++
@@ -97,9 +216,5 @@
     })
 
   })
-
-  $('code[class|="language"]').each(function(i, block) {
-    hljs.highlightBlock(block);
-  });
 
 }(jQuery);

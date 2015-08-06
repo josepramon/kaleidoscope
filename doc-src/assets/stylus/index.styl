@@ -1,0 +1,187 @@
+@import 'bootstrap-docs'
+
+
+// Header
+// ---------------------------------------------------------------------
+#theme-header
+  position: relative
+  height: 50px;
+  padding: 0 0 0 20px
+  margin-bottom: 10px
+  overflow: auto
+  background-color: #434A54
+  background-image: url(../images/unsplash/header.jpg)
+  background-position: center center
+  background-size: cover
+
+  h1
+    display: block
+    width:  133px
+    height: 40px
+    padding: 0
+    margin:  5px 0
+    float: left
+
+    a
+      display: block
+      width:  100%
+      height: 100%
+      overflow: hidden
+      text-indent: -99em
+      background-image: url(../images/logos/logo133x40.png)
+
+
+  nav
+    float: right
+
+    &, ul, li, a
+      height: 100%
+
+    ul
+      margin: 0
+      padding: 0
+      overflow: auto
+      list-style: none
+
+    li
+      float: left
+
+    a
+      display: block
+      padding: 0 2em
+      line-height: 50px
+      font-family: 'Armata',sans-serif;
+      font-weight: bold;
+      color: #fff
+      background: rgba(255,255,255,.2)
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2)
+      border-left: solid 1px rgba(255,255,255,.3)
+      transition: background 500ms
+
+      &:hover
+        background: rgba(255,255,255,.3)
+
+      &.active
+        background: rgba(255,255,255,.4)
+
+
+
+
+body.home #theme-header
+  height: 400px
+
+  h1
+    width:  300px
+    height: 91px
+    margin: 100px auto 0
+    float: none
+
+    a
+      background-image: url(../images/logos/logo300x91.png)
+
+  nav
+    height: 50px
+    border-top: solid 1px rgba(255,255,255,.3)
+    position: absolute
+    right:  0
+    bottom: 0
+
+
+
+
+// Footer
+// ---------------------------------------------------------------------
+#theme-footer
+  // ...
+
+
+
+// Color swatches
+// ---------------------------------------------------------------------
+.color-swatches
+  .swatches
+    border-radius: 4px
+    background-color: #FFF
+    width: 100%
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2)
+
+  .light, .dark
+    width: 50%
+    height: 50px
+
+  .light
+    border-radius: 4px 0 0 0
+
+  .dark
+    border-radius: 0 4px 0 0
+
+  .infos
+    padding: 5px 10px
+
+    h4, p
+      margin: 0
+
+    h4
+      margin-bottom: 3px
+      font-weight: bold
+      font-size: 14px
+
+    p
+      font-size: 12px
+
+
+
+
+
+// Misc
+// ---------------------------------------------------------------------
+
+.example
+  padding: 10px 0
+  border-bottom: dashed 1px #ccc
+
+  h2
+    margin-bottom: 20px
+
+body.home .example [class*=col-]
+  margin-bottom: 10px
+
+
+.blank
+  display: none
+
+
+.test-block
+  position: relative
+  padding: 1em
+  background-color: #f7f7f7
+  border: 1px solid #e5e5e5
+  border-radius: 3px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05)
+
+.example-dropdown h2+.dropdown-menu,
+.example-modal .modal,
+.example-popover .popover
+  display: block
+  position: relative
+
+.spaced-rows .row
+  margin-bottom: 10px
+
+
+
+// Selectize example
+// ---------------------------------------------------------------------
+.selectize-example-email
+  margin-left: 5px
+  font-style: italic
+
+  &:before
+    content: '<'
+  &:after
+    content: '>'
+
+.selectize-example-caption
+  font-size: 12px
+  display: block
+  opacity: 0.5
