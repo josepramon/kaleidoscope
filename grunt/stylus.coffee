@@ -1,16 +1,15 @@
 module.exports =
+  options:
+    compress: true
+    use: [
+      () -> require('autoprefixer-stylus') browsers: ['last 2 versions', 'ie 9']
+      () -> require('csso-stylus') restructure: false
+    ]
 
   main:
     options:
-      banner:   '<%= banner %>'
-      linenos:  false
-      compress: true
-      firebug:  false
-      use: [
-        () -> require('autoprefixer-stylus')
-          browsers: ['last 2 versions', 'ie 9']
-        () -> require('csso-stylus') restructure: false
-      ]
-    files: [
-      '<%= buildDir %>/main.css': '<%= srcDir %>/index.styl'
-    ]
+      banner: '<%= banner %>'
+    files:    [ '<%= buildDir %>/main.css': '<%= srcDir %>/index.styl' ]
+
+  docs:
+    files:    [ '<%= docsDir %>/assets/css/docs.css': '<%= docsSrcDir %>/assets/stylus/index.styl' ]

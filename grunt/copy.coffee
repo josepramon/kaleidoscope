@@ -24,6 +24,6 @@ module.exports =
   docsAssets:
     expand: true
     cwd:    '<%= docsSrcDir %>/assets'
-    src:    ['**/*']
+    src:    ['**/*', '!**/stylus/**']
     dest:   '<%= docsDir %>/assets/'
     filter: 'isFile'

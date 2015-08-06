@@ -1,23 +1,32 @@
 default:
   description: 'Default task, rebuilds everything'
   tasks:
-    - stylus
+    - styles
     - docs
 
 
 styles:
-  description: ''
+  description: 'Transpile the theme stylus files into CSS'
   tasks:
     - clean:dist
     - copy:fonts
-    - stylus
+    - stylus:main
 
 
 docs:
-  description: ''
+  description: 'Generate the theme documentation'
   tasks:
     - clean:docs
     - copy:docsAssets
-    - copy:docsCss
     - copy:docsFonts
+    - copy:docsCss
+    - stylus:docs
     - assemble
+
+
+dev:
+  description: 'Builds eveerything and watch for file changes'
+  tasks:
+    - default
+    - browserSync
+    - watch
