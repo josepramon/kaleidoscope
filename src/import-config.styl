@@ -1,39 +1,77 @@
-// Bootstrap components:
-$import-grid                  ?= true
-$import-tables                ?= true
-$import-forms                 ?= true
-$import-buttons               ?= true
-$import-component-animations  ?= true
-$import-dropdowns             ?= true
-$import-button-groups         ?= true
-$import-input-groups          ?= true
-$import-navs                  ?= true
-$import-navbar                ?= true
-$import-breadcrumbs           ?= true
-$import-pagination            ?= true
-$import-pager                 ?= true
-$import-labels                ?= true
-$import-badges                ?= true
-$import-jumbotron             ?= true
-$import-thumbnails            ?= true
-$import-alerts                ?= true
-$import-progress-bars         ?= true
-$import-media                 ?= true
-$import-list-group            ?= true
-$import-panels                ?= true
-$import-responsive-embed      ?= true
-$import-wells                 ?= true
-$import-close                 ?= true
-$import-modals                ?= true
-$import-tooltip               ?= true
-$import-popovers              ?= true
-$import-carousel              ?= true
+// Common CSS:
+// ---------------------------------------------------------------------
+$import-print                ?= true
+$import-typography           ?= true
+$import-code                 ?= true
+$import-grid                 ?= true
+$import-tables               ?= true
+$import-forms                ?= true
+$import-buttons              ?= true
+$import-responsive-utilities ?= true
 
-// Custom components
-$import-extended-buttons       ?= true
-$import-extended-button-groups ?= true
-$import-extended-labels        ?= true
+// Components:
+// ---------------------------------------------------------------------
+$import-glyphicons           ?= false
+$import-button-groups        ?= true
+$import-input-groups         ?= true
+$import-navs                 ?= true
+$import-navbar               ?= true
+$import-breadcrumbs          ?= true
+$import-pagination           ?= true
+$import-pager                ?= true
+$import-labels               ?= true
+$import-badges               ?= true
+$import-jumbotron            ?= true
+$import-thumbnails           ?= true
+$import-alerts               ?= true
+$import-progress-bars        ?= true
+$import-media-items          ?= true
+$import-list-groups          ?= true
+$import-panels               ?= true
+$import-responsive-embed     ?= true
+$import-wells                ?= true
+$import-close-icon           ?= true
 
-// Other libs (jquery plugins, mostly)
-$import-plugins-selectize      ?= true
-$import-plugins-toastr         ?= true
+// JS components:
+// ---------------------------------------------------------------------
+$import-component-animations =? true
+$import-dropdowns            =? true
+$import-tooltips             =? true
+$import-popovers             =? true
+$import-modals               =? true
+$import-carousel             =? true
+
+// Extras (variations to bootstrap components and custom components):
+// ---------------------------------------------------------------------
+$import-buttons-extra        ?= true
+$import-button-groups-extra  ?= true
+$import-labels-extra         ?= true
+
+// Other libs (jquery plugins, mostly):
+// ---------------------------------------------------------------------
+$import-vendor-font-awesome  ?= true
+$import-vendor-selectize     ?= true
+$import-vendor-toastr        ?= true
+
+
+
+// Dependencies
+// ---------------------------------------------------------------------
+if $import-buttons-extra
+  $import-buttons = true
+
+if $import-button-groups-extra
+  $import-button-groups = true
+
+if $import-labels-extra
+  $import-labels = true
+
+if $import-button-groups
+  $import-buttons = true
+
+if $import-input-groups
+  $import-forms = true
+
+if $import-navbar
+  $import-forms = true
+  $import-navs  = true
