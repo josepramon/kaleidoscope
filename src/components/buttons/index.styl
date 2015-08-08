@@ -1,4 +1,6 @@
 @require 'base'
 @require $bootstrapPath+'buttons'
 @require 'overrides'
-@require 'extras'
+
+if $import-buttons-extra
+  @require 'extras'
