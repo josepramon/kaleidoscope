@@ -4,6 +4,20 @@ mark,
   background-color $color-grapefruit
 
 
+
+a:not([class])
+  anchor-hover-effect()
+
+// fixes
+.nav a:before,
+.pagination a:before,
+.pager a:before,
+a.disabled:before, a[disabled]:before
+th a:before
+  content: none
+
+
+
 // Contextual colors
 .text-muted
   color $text-muted
