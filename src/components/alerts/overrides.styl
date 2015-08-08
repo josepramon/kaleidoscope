@@ -1,0 +1,19 @@
+.alert-success,
+.alert-info,
+.alert-warning,
+.alert-danger
+  .alert-link,
+  .btn-link:not(.inverted):not(.circular) // give it a hight specificity to override the rule deffined in buttons.styl
+    color: #fff
+    anchor-hover-effect-variant(#fff)
+
+
+.alert-link
+  font-weight: normal
+  text-decoration: underline
+
+  &:hover
+    text-decoration: none
+
+.alert-link
+  anchor-hover-effect()
