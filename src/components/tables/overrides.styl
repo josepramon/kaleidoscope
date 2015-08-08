@@ -1,0 +1,17 @@
+// Tables
+table-row-variant-fixColor($state, $color = #fff)
+  .table > thead > tr,
+  .table > tbody > tr,
+  .table > tfoot > tr
+    > td.{$state},
+    > th.{$state},
+    &.{$state} > td,
+    &.{$state} > th
+      color: #fff
+
+
+table-row-variant-fixColor(active)
+table-row-variant-fixColor(success)
+table-row-variant-fixColor(info)
+table-row-variant-fixColor(warning)
+table-row-variant-fixColor(danger)
