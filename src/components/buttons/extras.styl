@@ -1,0 +1,68 @@
+// Additional buttons types:
+// ---------------------------------------------------------------------
+// requires the `buttons` bootstrap component
+
+
+// circular buttons
+// --------------------------------
+.btn.circular
+  border-radius: 10em
+  padding: 0
+  width: 2.6em
+  height: 2.6em
+
+
+// inverted buttons
+// --------------------------------
+.btn.inverted
+  border-width: 2px
+  font-weight: bold
+
+
+// animated buttons
+// --------------------------------
+
+
+// labeled buttons
+// --------------------------------
+
+
+// loading buttons
+// --------------------------------
+
+
+// color variants
+// --------------------------------
+button-extend($background-color)
+  &.inverted
+    button-variant($background-color, transparent, $background-color)
+
+    &:hover
+      button-variant(white, $background-color, darken($background-color, 10%))
+
+
+
+
+.btn
+  button-extend($gray-toned)
+
+.btn-default
+  button-extend($btn-default-color)
+
+.btn-primary
+  button-extend($btn-primary-bg)
+
+.btn-success
+  button-extend($btn-success-bg)
+
+.btn-info
+  button-extend($btn-info-bg)
+
+.btn-warning
+  button-extend($btn-warning-bg)
+
+.btn-danger
+  button-extend($btn-danger-bg)
+
+.btn-link
+  button-extend($link-color)
