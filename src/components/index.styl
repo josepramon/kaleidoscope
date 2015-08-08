@@ -1,3 +1,13 @@
+// Font-awesome (used instead of glypghicons):
+// must be imported first so the line-height, dimensions and other
+// properties can be overrided without the !important flag
+// ---------------------------------------------------------------------
+if $import-vendor-font-awesome
+  @require 'vendor-font-awesome'
+
+
+// Vendor:
+// ---------------------------------------------------------------------
 if $import-print
   @require 'print'
 
@@ -103,10 +113,6 @@ if $import-responsive-utilities
 
 // Vendor:
 // ---------------------------------------------------------------------
-if $import-vendor-font-awesome
-  @require 'vendor-font-awesome'
-
-
 if $import-vendor-selectize
   @require 'vendor-selectize'
 
