@@ -1,7 +1,6 @@
 node_modules
 vendor
 
-dist/*
 doc/*
 doc-src/assets/css
 
