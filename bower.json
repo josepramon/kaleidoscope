@@ -1,7 +1,7 @@
 {
-  "name": "Mosaiqo Theme",
-  "version": "0.0.1",
-  "description": "",
+  "name": "Tesserae",
+  "description": "Bootstrap theme built on top of bootstrap-stylus with some additional components",
+  "version": "0.0.0",
   "authors": [
     "Josep Ramon Camps Lladó <jrcamps@mosaiqo.com>"
   ],
