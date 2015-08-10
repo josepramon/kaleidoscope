@@ -7,7 +7,7 @@
   ],
   "license": "MIT",
   "private": true,
-  "main": "",
+  "main": "src/index.styl",
   "dependencies": {
     "bootstrap-stylus": "~4.0.5",
     "selectize-bootstrap-stylus": "~0.0.3",
