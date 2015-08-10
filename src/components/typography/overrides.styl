@@ -12,6 +12,7 @@ a:not([class])
 .nav a:before,
 .pagination a:before,
 .pager a:before,
+.breadcrumb a,
 a.disabled:before, a[disabled]:before
 th a:before
   content: none
@@ -36,3 +37,12 @@ th a:before
 
 .text-danger
   text-emphasis-variant($brand-danger)
+
+
+// Contextual backgrounds
+.bg-primary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger
+  color #fff
