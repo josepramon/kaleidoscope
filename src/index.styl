@@ -34,7 +34,7 @@ unless $headings-font-family is defined
 // Bootstrap components config.
 // All the variables are conditionally set (?=) so they can be
 // overrided without altering the files on the config directory
-@require 'config'
+@require 'config/'
 
 // Configuration for other 3rd party libs
 @require 'config/vendor/*'
@@ -44,7 +44,7 @@ unless $headings-font-family is defined
 @require $bootstrapPath+'mixins'
 
 // Custom mixins
-@require 'mixins'
+@require 'mixins/'
 
 
 
@@ -66,4 +66,4 @@ unless $headings-font-family is defined
 // just set to false any of the values deffined in `import-config.styl`
 // before importing this file.
 @require 'import-config'
-@require 'components'
+@require 'components/'
