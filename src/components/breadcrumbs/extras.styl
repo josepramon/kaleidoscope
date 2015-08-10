@@ -1,0 +1,60 @@
+.breadcrumb-arrow
+  padding: 0
+
+  li
+    margin-left: -4px
+
+    &:first-child
+      margin-left: 0
+
+    + li:before
+      content: none
+
+    a
+      color: #fff
+      background-color: $brand-primary
+      transition: background-color .2s
+
+    &.active a
+      color: $breadcrumb-color
+      background-color: transparent
+
+    a, span
+      display: inline-block
+      padding $breadcrumb-padding-vertical $breadcrumb-padding-horizontal
+      padding-left: 20px
+
+    a
+      position: relative
+      z-index: auto
+
+      &:after, &:before
+        position: absolute
+        top:    0
+        width:  0
+        height: 0
+        content: ''
+        border-top:    18px solid transparent
+        border-bottom: 18px solid transparent
+        transform: none
+        left: auto !important
+        background-color: transparent !important
+
+      &:before
+        right: -10px
+        z-index: 3
+        border-left-color: $brand-primary
+        border-left-style: solid
+        border-left-width: 11px
+        transition: border-left-color .2s
+
+      &:after
+        right: -11px
+        z-index: 2
+        border-left: 11px solid darken($brand-primary, 20%)
+
+      &:hover
+        background-color: lighten($brand-primary, 20%)
+
+        &:before
+          border-left-color: lighten($brand-primary, 20%)
