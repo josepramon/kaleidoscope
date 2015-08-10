@@ -1,0 +1,39 @@
+// tabs on bottom variant
+// ---------------------------------------------------------------------
+.tabs-below .nav-tabs
+  border-radius: 0 0 4px 4px
+
+  > li
+  &:first-child a
+    border-radius: 0 0 4px 0 !important
+  &:last-child a
+    border-radius: 0 0 0 4px !important
+
+
+// lateral variants
+// ---------------------------------------------------------------------
+
+.tabs-left, .tabs-right
+  .nav-tabs > li
+    float: none
+    border-left: none
+    border-bottom: 1px solid $nav-tabs-border-color
+
+    &:last-child
+      border-bottom: none
+
+
+// tabs on left variant:
+.tabs-left
+  .nav-tabs
+    float: left
+    margin-right: 19px
+    border-radius: 4px 0 0 4px
+
+
+// tabs on left variant:
+.tabs-right
+  .nav-tabs
+    float: right
+    margin-left: 19px
+    border-radius: 0 4px 4px 0
