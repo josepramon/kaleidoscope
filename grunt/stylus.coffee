@@ -9,7 +9,7 @@ module.exports =
   main:
     options:
       banner: '<%= banner %>'
-    files:    [ '<%= buildDir %>/tesserae.css': '<%= srcDir %>/index.styl' ]
+    files:    [ '<%= buildDir %>/kaleidoscope.css': '<%= srcDir %>/index.styl' ]
 
   docs:
     files:    [ '<%= docsDir %>/assets/css/docs.css': '<%= docsSrcDir %>/assets/stylus/index.styl' ]
