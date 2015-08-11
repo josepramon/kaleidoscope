@@ -29,10 +29,10 @@ nav:
         anchor: "#callout-third-party-libs"
   -
     title:  "Transitions"
-    anchor: "#js-transitions"
+    anchor: "#transitions"
   -
     title:  "Modal"
-    anchor: "#js-modals"
+    anchor: "#modals"
     sections:
       -
         title:  "Examples"
