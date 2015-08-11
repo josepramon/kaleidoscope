@@ -1,5 +1,4 @@
 .panel
-  border: none
   box-shadow: $component-shadow
 
 
@@ -9,6 +8,10 @@
 // Wrap a series of panels in `.panel-group` to turn them into an accordion with
 // the help of our collapse JavaScript plugin.
 .panel-group
+  box-shadow: $component-shadow
+
+  &>.panel
+    box-shadow: none
 
   .panel,
   .panel-heading,
@@ -17,7 +20,6 @@
     border-radius: 0
 
   .panel
-    // box-shadow: none
     border-bottom 1px solid $panel-inner-border
 
     + .panel
@@ -31,3 +33,30 @@
       border-bottom none
       &, .panel-heading
         border-radius 0 0 $panel-border-radius $panel-border-radius
+
+
+
+  .panel-heading + .panel-collapse
+    >.panel-body,
+    >.list-group
+      border-top: solid 1px darken($panel-bg, 8%)
+
+
+  .panel-heading a
+    display: block
+    position: relative
+    padding-left: 16px
+
+    &:after
+      position: absolute
+      left: 0
+      top: .4em
+      content: ' '
+      @extend .caret
+    &.collapsed
+      &:after
+        top: .2em
+        border-top:    $caret-width-base solid transparent
+        border-right:  none
+        border-bottom: $caret-width-base solid transparent
+        border-left:   $caret-width-base dashed
