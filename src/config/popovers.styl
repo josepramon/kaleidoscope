@@ -1,19 +1,20 @@
 // Popovers
 // ---------------------------------------------------------------------
 
+$popover-color                      ?= #fff
 //** Popover body background color
-$popover-bg                         ?= #fff
+$popover-bg                         ?= $gray-toned-dark
 //** Popover maximum width
 $popover-max-width                  ?= 276px
 //** Popover border color
-$popover-border-color               ?= rgba(0, 0, 0, .2)
+$popover-border-color               ?= $popover-bg
 //** Popover fallback border color
-$popover-fallback-border-color      ?= #ccc
+$popover-fallback-border-color      ?= $popover-bg
 
 //** Popover title background color
-$popover-title-bg                   ?= darken($popover-bg, 3%)
+$popover-title-bg                   ?= $popover-bg
 
-//** Popover arrow width
+//** Popover arrow width5
 $popover-arrow-width                ?= 10px
 //** Popover arrow color
 $popover-arrow-color                ?= $popover-bg
