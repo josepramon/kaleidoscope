@@ -41,16 +41,12 @@
 .toast-message
   word-wrap: break-word
 
-  a, label
-    color: #ffffff
-
-  a:hover
-    color: #cccccc
-    text-decoration: none
+  a
+    @extend .alert a:not(.btn)
 
 
 .toast-close-button
-  @extend  .close
+  @extend .close
   @extend .alert-dismissible .close
 
   &, :hover

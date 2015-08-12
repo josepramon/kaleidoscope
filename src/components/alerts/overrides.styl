@@ -5,7 +5,9 @@
 .alert-info,
 .alert-warning,
 .alert-danger
-  .alert-link,
+  a
+    color: #fff
+
   .btn-link:not(.inverted):not(.circular) // give it a hight specificity to override the rule deffined in buttons.styl
     color: #fff
     anchor-hover-effect-variant(#fff)
@@ -15,12 +17,14 @@
       color #fff
 
 
-.alert-link
-  font-weight: normal
-  text-decoration: underline
+.alert a:not(.btn)
+  cursor: pointer
+  text-decoration: none
+  font-weight $alert-link-font-weight
+  border-bottom: dotted 1px
+  background-color: rgba(255,255,255,0)
+  transition: background-color .2s, border-color .2s
 
   &:hover
-    text-decoration: none
-
-.alert-link
-  anchor-hover-effect()
+    border-bottom-color: transparent
+    background-color: rgba(255,255,255,.3)
