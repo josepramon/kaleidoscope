@@ -1,0 +1,85 @@
+.table
+
+  // Sortable indicators
+  // ---------------------------------------------------------------------
+  thead
+    th.sortable:after
+      display:inline-block
+      width: 0
+      height: 0
+      margin-left: 0.3em
+      border: 0
+      content: ''
+
+    th.sortable.ascending:after
+      vertical-align: baseline
+      border-top: none
+      border-right:  4px solid transparent
+      border-bottom: 4px solid
+      border-left:   4px solid transparent
+
+    th.sortable.descending:after
+      vertical-align: super
+      border-top:    4px solid
+      border-right:  4px solid transparent
+      border-bottom: none
+      border-left:   4px solid transparent
+
+
+  // Cells with borders
+  // The table-bordered displays only the row border.
+  // This adds borders to the columns.
+  // ---------------------------------------------------------------------
+  &.celled
+    > thead,
+    > tbody,
+    > tfoot
+      > tr
+        > th,
+        > td
+          border-right-style: solid
+          border-right-width: 1px
+
+          &:last-child
+            border-right: none
+
+
+  // Filled tables
+  // By thefault, the tables are transparent.
+  // This sets a bg color to the cells.
+  // ---------------------------------------------------------------------
+  &.filled
+    th
+      background-color: $table-filled-header-bg
+    td
+      background-color: $table-filled-bg
+
+
+  // Inverted tables (white text over dark background)
+  // ---------------------------------------------------------------------
+  &.inverted
+    table-colored-valiant($table-inverted-bg)
+
+    // color variants
+    &.primary
+      table-colored-valiant($brand-primary)
+    &.success
+      table-colored-valiant($brand-success)
+    &.info
+      table-colored-valiant($brand-info)
+    &.warning
+      table-colored-valiant($brand-warning)
+    &.danger
+      table-colored-valiant($brand-danger)
+
+
+
+// The bordered variant has applied a border-collapse:separate
+// in order to apply rounded corners and some effects, but this
+// can cause some problems on complex tables with colspans or
+// rowspans.
+// ---------------------------------------------------------------------
+.table-bordered
+  &.complex
+    border-collapse: collapse
+    border-radius: none

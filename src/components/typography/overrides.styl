@@ -9,6 +9,9 @@ a:not([class])
   anchor-hover-effect()
 
 // fixes
+// --------------------------
+// elements to NOT apply this
+// TODO: this is fugly...
 .nav a:before,
 .pagination a:before,
 .pager a:before,
@@ -18,7 +21,6 @@ thead a:before,
 .panel-group .panel-heading a:before,
 a.disabled:before, a[disabled]:before,
 .toast a:before
-th a:before
   content: none
 
 

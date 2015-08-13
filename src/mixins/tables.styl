@@ -1,0 +1,9 @@
+table-colored-valiant($bgCol, $col=#fff)
+  th, td
+    border-color: rgba(255,255,255,.1)
+    &, a
+      color: $col
+  td
+    background-color: $bgCol
+  th
+    background-color: darken($bgCol, 8%)
