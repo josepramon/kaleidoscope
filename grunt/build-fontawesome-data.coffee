@@ -3,7 +3,7 @@ fs = require 'fs'
 # Custom task, creates a yml file with all the Font Awesome classes
 # Based on the bs-glyphicons-data-generator.js from Bootstrap
 # https://github.com/twbs/bootstrap/blob/master/grunt/bs-glyphicons-data-generator.js
-module.expors = (grunt) ->
+module.exports = (grunt) ->
 
   iconsFile    = fs.readFileSync('vendor/font-awesome-stylus/stylus/icons.styl', 'utf8')
   iconsYml     = 'doc-src/data/fontawesome-icons.yml'
