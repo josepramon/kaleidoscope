@@ -8,3 +8,10 @@ module.exports = (grunt) ->
 
   # Display the elapsed execution time of grunt tasks
   require('time-grunt') grunt
+
+
+  # Custom task, creates a yml file with all the Font Awesome classes
+  faIconDataGenerator = require './grunt/build-fontawesome-data'
+
+  grunt.registerTask 'build-fontawesome-data', () ->
+    faIconDataGenerator.call this, grunt

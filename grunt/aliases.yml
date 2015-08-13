@@ -21,6 +21,7 @@ docs:
     - copy:docsFonts
     - copy:docsCss
     - stylus:docs
+    - build-fontawesome-data
     - assemble
 
 

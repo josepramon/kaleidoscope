@@ -3,6 +3,7 @@ vendor/*
 
 doc/*
 doc-src/assets/css
+doc-src/data/fontawesome-icons.yml
 
 *.sublime-project
 *.sublime-workspace
