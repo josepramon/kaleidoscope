@@ -57,7 +57,7 @@ if $import-navbar
   $import-navs  = true
 
 
-// Extras (variations to bootstrap components and custom components):
+// Extras (variations to bootstrap components):
 // The extras may have dependencies.
 // ---------------------------------------------------------------------
 $import-breadcrumbs-extra    ?= true
@@ -94,6 +94,11 @@ $import-tables-extra         ?= true
 
 if $import-tables-extra
   $import-tables = true
+
+
+// Custom components
+// ---------------------------------------------------------------------
+$import-containers           ?= true
 
 
 // Other libs (jquery plugins, mostly):
