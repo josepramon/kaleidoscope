@@ -7,3 +7,11 @@ table-colored-valiant($bgCol, $col=#fff)
     background-color: $bgCol
   th
     background-color: darken($bgCol, 8%)
+
+  &.table-hover
+    > tbody > tr:hover
+        td
+          background-color: lighten($bgCol, 4%)
+        th
+          background-color: darken($bgCol, 4%)
+
