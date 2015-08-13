@@ -3,6 +3,9 @@ nav:
     title:  "Overview"
     anchor: "#extras-overview"
   -
+    title:  "Font awesome"
+    anchor: "#fontawesome"
+  -
     title:  "Buttons"
     anchor: "#buttons"
     sections:

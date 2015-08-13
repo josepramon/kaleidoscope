@@ -1,0 +1,19 @@
+<div class="bs-docs-section">
+  <h1 id="fontawesome" class="page-header">Font awesome</h1>
+
+  <p><a href="http://fortawesome.github.io/Font-Awesome/">Font awesome</a> icons can be used instead of Glyphicons. Both icon libraries can be used simultaneusly.</p>
+
+  <p>The default Font awesome prefix <code>fa</code> has been replaced to a more generic one <code>icon</code>, so it's easier to use another icon library.</p>
+
+  <div class="bs-glyphicons">
+    <ul class="bs-glyphicons-list">
+      {{#each fontawesome-icons}}
+        <li>
+          <span class="icon {{.}}" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon {{.}}</span>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+
+</div>
