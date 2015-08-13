@@ -1,3 +1,5 @@
 @require $bootstrapPath+'navs'
 @require 'overrides'
-@require 'extras'
+
+if $import-navs-extra
+  @require 'extras'

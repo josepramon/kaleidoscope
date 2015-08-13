@@ -1,3 +1,5 @@
 @require $bootstrapPath+'breadcrumbs'
 @require 'overrides'
-@require 'extras'
+
+if $import-breadcrumbs-extra
+  @require 'extras'
