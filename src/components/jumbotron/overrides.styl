@@ -1,0 +1,21 @@
+.jumbotron
+  > .jumbotron-photo,
+  > .carousel
+    margin-top:    $jumbotron-padding * -1
+    margin-bottom: $jumbotron-padding
+
+  @media screen and (min-width $screen-sm-min)
+    > .jumbotron-photo,
+    > .carousel
+      margin-top: ($jumbotron-padding * 1.6) * -1
+
+    .container &,
+    .container-fluid &
+      > .jumbotron-photo,
+      > .carousel
+        margin-left:  ($jumbotron-padding * 2) * -1
+        margin-right: ($jumbotron-padding * 2) * -1
+
+
+.jumbotron-photo > img
+  width: 100%
