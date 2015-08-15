@@ -10,7 +10,6 @@
     "Josep Ramon Camps Lladó <jrcamps@mosaiqo.com>"
   ],
   "license": "MIT",
-  "private": true,
   "main": "src/index.styl",
   "dependencies": {
     "bootstrap-stylus": "~4.0.5",
