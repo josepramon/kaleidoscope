@@ -1,7 +1,11 @@
 {
   "name": "kaleidoscope",
   "description": "Bootstrap theme built on top of bootstrap-stylus with some additional components",
-  "version": "0.0.0",
+  "keywords": [
+    "bootstrap",
+    "stylus"
+  ],
+  "version": "0.0.1",
   "authors": [
     "Josep Ramon Camps Lladó <jrcamps@mosaiqo.com>"
   ],

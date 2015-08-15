@@ -1,9 +1,15 @@
-<header id="theme-header">
+<header id="global-header">
   <h1>
     <a href="index.html">
       Mosaiqo theme
     </a>
   </h1>
+
+  {{#is pageId 'home'}}
+  <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+  {{/is}}
+
+
   <nav>
     <ul>
       <li><a href="css.html" class="{{#is pageId 'css'}}active{{/is}}">CSS</a></li>

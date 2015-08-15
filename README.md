@@ -1,1 +1,3 @@
-Work in progress - Don't use this yet
+# Kaleidoscope
+
+Kaleidoscope is an open source Bootstrap theme, with some extensions inspired on other UI kits, like Semantic-UI, PureCss and others.
