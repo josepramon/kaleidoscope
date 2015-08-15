@@ -1,0 +1,21 @@
+<header id="global-header">
+  <h1>
+    <a href="index.html">
+      Mosaiqo theme
+    </a>
+  </h1>
+
+  {{#is pageId 'home'}}
+  <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+  {{/is}}
+
+
+  <nav>
+    <ul>
+      <li><a href="css.html" class="{{#is pageId 'css'}}active{{/is}}">CSS</a></li>
+      <li><a href="components.html" class="{{#is pageId 'components'}}active{{/is}}">Components</a></li>
+      <li><a href="javascript.html" class="{{#is pageId 'javascript'}}active{{/is}}">Javascript</a></li>
+      <li><a href="extras.html" class="{{#is pageId 'extras'}}active{{/is}}">Extras</a></li>
+    </ul>
+  </nav>
+</header>

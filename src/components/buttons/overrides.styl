@@ -1,0 +1,59 @@
+.btn
+  &:hover
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.1)
+
+  &:active,
+  &.active
+    box-shadow inset 0 1px 2px rgba(0,0,0,.4)
+
+
+.btn-link,
+.btn[disabled],
+.btn-group .btn,
+.btn-group-vertical .btn,
+.input-group-btn .btn
+  &:hover
+    box-shadow: none
+
+
+// Hover effect for link buttons
+// --------------------------------------------------
+.btn-link:not(.inverted):not(.circular)
+  anchor-hover-effect()
+
+  &.btn-primary
+    anchor-hover-effect-variant($btn-primary-color)
+
+  &.btn-success
+    anchor-hover-effect-variant($btn-success-color)
+
+  &.btn-info
+    anchor-hover-effect-variant($btn-info-color)
+
+  &.btn-warning
+    anchor-hover-effect-variant($btn-warning-color)
+
+  &.btn-danger
+    anchor-hover-effect-variant($btn-danger-color)
+
+
+// disable the effect on disabled buttons
+.btn.disabled:before, .btn-link[disabled]:before
+  content: none
+
+
+// Make the buttons slightly darker on backgrounds
+// with the same background color
+// --------------------------------------------------
+if $import-alerts
+  .alert-success .btn-success
+    background-color: darken($btn-success-bg, 30%)
+
+  .alert-info .btn-info
+    background-color: darken($btn-info-bg, 30%)
+
+  .alert-warning .btn-warning
+    background-color: darken($btn-warning-bg, 20%)
+
+  .alert-danger .btn-danger
+    background-color: darken($btn-danger-bg, 30%)

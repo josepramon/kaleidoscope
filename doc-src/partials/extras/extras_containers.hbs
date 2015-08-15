@@ -1,0 +1,214 @@
+<div class="bs-docs-section">
+  <h1 id="containers" class="page-header">Containers</h1>
+
+
+  <h2 id="jumbotron">Jumbotron</h2>
+  <p>Jumbotron component has been expanded to support full width images and caroussels.</p>
+
+  <div class="bs-example">
+    <div class="jumbotron">
+      <div class="jumbotron-photo"><img src="http://lorempixel.com/555/333/cats/1" /></div>
+      <h2>Oh hai!</h2>
+      <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+      <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+    </div>
+  </div>
+
+{{#markdown}}
+```html
+<div class="jumbotron">
+  <div class="jumbotron-photo"><img src="http://lorempixel.com/555/333/cats/1" /></div>
+  <h2>Oh hai!</h2>
+  <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+  <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+</div>
+```
+{{/markdown}}
+
+
+  <div class="bs-example">
+
+    <div class="jumbotron">
+      <div id="carousel-example" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example" data-slide-to="1"></li>
+          <li data-target="#carousel-example" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active"><img src="http://lorempixel.com/555/333/cats/2"></div>
+          <div class="item"><img src="http://lorempixel.com/555/333/cats/3"></div>
+          <div class="item"><img src="http://lorempixel.com/555/333/cats/4"></div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+          <span class="icon icon-prev icon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example" data-slide="next">
+          <span class="icon icon-next icon-chevron-right"></span>
+        </a>
+      </div>
+      <h2>Oh hai!</h2>
+      <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+      <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+    </div>
+
+  </div>
+
+{{#markdown}}
+```html
+<div class="jumbotron">
+  <div id="carousel-example" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example" data-slide-to="1"></li>
+      <li data-target="#carousel-example" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active"><img src="http://lorempixel.com/555/333/cats/2"></div>
+      <div class="item"><img src="http://lorempixel.com/555/333/cats/3"></div>
+      <div class="item"><img src="http://lorempixel.com/555/333/cats/4"></div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+      <span class="icon icon-prev icon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example" data-slide="next">
+      <span class="icon icon-next icon-chevron-right"></span>
+    </a>
+  </div>
+  <h2>Oh hai!</h2>
+  <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+  <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+</div>
+```
+{{/markdown}}
+
+
+
+  <h2 id="blankslate">Blankslate</h2>
+  <p>Blankslates are for when there is a lack of content within a page or section. Use them as placeholders to tell users why something isn’t there. Be sure to provide an action to add content as well.</p>
+  <p>Ported from <a href="http://primercss.io">PrimerCSS</a></p>
+
+
+  <h3>Basic example</h3>
+
+  <div class="bs-example">
+    <div class="blankslate">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+{{#markdown}}
+```html
+<div class="blankslate">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>Large format, with icons</h3>
+
+  <div class="bs-example">
+    <div class="blankslate large-format">
+      <span class="icon icon-github"></span>
+      <span class="icon icon-tags"></span>
+      <span class="icon icon-code-fork"></span>
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+{{#markdown}}
+```html
+<div class="blankslate large-format">
+  <span class="icon icon-github"></span>
+  <span class="icon icon-tags"></span>
+  <span class="icon icon-code-fork"></span>
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>Fixed width</h3>
+  <p>Narrows the blankslate container to not occupy the entire available width.</p>
+
+  <div class="bs-example">
+    <div class="blankslate has-fixed-width">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+{{#markdown}}
+```html
+<div class="blankslate has-fixed-width">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>Capped</h3>
+  <p>Removes the <code>border-radius</code> on the top corners.</p>
+
+  <div class="bs-example">
+    <div class="blankslate capped">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+{{#markdown}}
+```html
+<div class="blankslate capped">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>Spacious</h3>
+  <p>Significantly increases the vertical padding.</p>
+
+  <div class="bs-example">
+    <div class="blankslate spacious">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+{{#markdown}}
+```html
+<div class="blankslate spacious">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</div>
+```
+{{/markdown}}
+
+
+  <h3>No background</h3>
+  <p>Removes the <code>background-color</code> and <code>border</code>.</p>
+
+  <div class="bs-example">
+    <div class="blankslate clean-background">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+{{#markdown}}
+```html
+<div class="blankslate clean-background">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</div>
+```
+{{/markdown}}
+</div>

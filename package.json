@@ -1,0 +1,30 @@
+{
+  "name": "kaleidoscope",
+  "description": "Bootstrap theme built on top of bootstrap-stylus with some additional components",
+  "version": "0.0.1",
+  "author": "Josep Ramon Camps Lladó <jrcamps@mosaiqo.com>",
+  "homepage": "http://www.mosaiqo.com",
+  "dependencies": {
+    "bower": "^1.4.1"
+  },
+  "devDependencies": {
+    "assemble": "^0.4.42",
+    "autoprefixer-stylus": "^0.7.1",
+    "coffee-script": "^1.9.3",
+    "csso-stylus": "0.0.3",
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.1.3",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-stylus": "^0.22.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.1",
+    "jit-grunt": "^0.9.1",
+    "load-grunt-config": "^0.17.2",
+    "time-grunt": "^1.2.1"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "private": true
+}

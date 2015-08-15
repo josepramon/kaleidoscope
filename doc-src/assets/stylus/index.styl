@@ -1,0 +1,125 @@
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+
+body
+  background-color: #f1f1ef
+
+.wrapper
+  min-height: 100%
+  position: relative
+
+
+// Header
+// ---------------------------------------------------------------------
+#global-header
+  position: relative
+  height: 50px;
+  padding: 0 0 0 20px
+  margin-bottom: 10px
+  overflow: auto
+  color: #fff
+  background-color: #292925
+  background-image: url(../images/unsplash/header.jpg)
+  background-position: center center
+  background-size: cover
+
+  h1
+    display: block
+    width:  180px
+    height: 40px
+    max-width: 90%
+    padding: 0
+    margin:  5px 0
+    float: left
+
+    a
+      display: block
+      width:  100%
+      height: 100%
+      overflow: hidden
+      text-indent: -99em
+      background: url(../images/logos/kaleidoscope180x40.png) no-repeat
+      background-size: contain
+
+
+  nav
+    float: right
+
+    &, ul, li, a
+      height: 100%
+
+    ul
+      margin: 0
+      padding: 0
+      overflow: auto
+      list-style: none
+
+    li
+      float: left
+
+    a
+      display: block
+      padding: 0 2em
+      line-height: 50px
+      font-family: 'Armata',sans-serif;
+      font-weight: bold;
+      color: #fff
+      background: rgba(255,255,255,.3)
+      border-left: solid 1px rgba(255,255,255,.5)
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2)
+      transition: background 500ms
+
+      &:hover
+        background: rgba(255,255,255,.4)
+
+      &.active
+        background: rgba(255,255,255,.5)
+
+
+
+
+
+
+
+
+
+// Footer
+// ---------------------------------------------------------------------
+.wrapper
+  padding-bottom: 280px
+
+
+
+#global-footer
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  color: #fff
+  background-color: #292925
+  text-align: center
+  font-size: 12px
+
+  .inner
+    padding: 20px 40px
+
+  .icon-heart
+    color: red
+    margin: 0 2px
+
+  .mosaiqo
+    display: block
+    width: 133px
+    height: 40px
+    overflow: hidden
+    margin: 12px auto 18px
+    text-indent: -99em
+    background-image: url(../images/logos/mosaiqo133x40.png)
+
+
+
+@import 'bootstrap-docs'
+@import 'docs'
+@import 'home'

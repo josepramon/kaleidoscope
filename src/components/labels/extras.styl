@@ -1,0 +1,129 @@
+// Additional label types:
+// ---------------------------------------------------------------------
+// requires the `labels` bootstrap component
+
+
+// floating labels
+// --------------------------------
+
+// TODO
+
+
+// image
+// --------------------------------
+
+// TODO
+
+
+// ribbon
+// --------------------------------
+.label.ribbon
+  position: relative
+  left: calc(-1rem - 1.8em)
+
+  display: inline-block
+  min-width: max-content
+
+  margin: 0 0 .2em
+  margin-right: -1.4em
+
+  padding: .6em
+  padding-left: calc(1rem + 1.5em)
+  padding-right: 1.5em
+
+  border-radius: 0 .25em .25em 0
+  border-color: rgba(0,0,0,.15)
+
+  &:after
+    position: absolute
+    top: 100%
+    left: 0
+
+    width: 0
+    height: 0
+
+    content: ''
+
+    background-color: transparent !important
+    border-style: solid
+    border-width: 0 1.5em 1.5em 0
+    border-color: transparent
+    border-right-color: inherit
+
+  &.right
+    left: calc(100% + 1rem + 1.5em)
+    padding-left: 1.5em
+    padding-right: calc(1rem + 1.5em)
+    transform: translateX(-100%)
+    text-align: left
+    border-radius: .25em 0 0 .25em
+
+    &:after
+      left: auto
+      right: 0
+      border-style: solid
+      border-width: 1.2em 1.2em 0 0
+      border-color: transparent
+      border-top-color: inherit
+
+
+
+// corner-ribbon
+// --------------------------------
+.label.ribbon-corner
+  position: absolute
+  top: 2em
+  left: -4em
+  width: 16em
+  border: none
+  line-height: 2em
+  text-align: center
+  letter-spacing: 1px
+  transform: rotate(-45deg)
+
+  &.top-right
+    top: 2em
+    right: -4em
+    left: auto
+    transform: rotate(45deg)
+
+  &.bottom-left
+    top: auto
+    bottom: 2em
+    left: -4em
+    transform: rotate(45deg)
+
+  &.bottom-right
+    top: auto
+    right: -4em
+    bottom: 2em
+    left: auto
+    transform: rotate(-45deg)
+
+
+// color variants
+// --------------------------------
+label-extend($color)
+  &.ribbon
+    border-color: darken($color, 25%)
+
+
+
+.label-default
+  label-extend($label-default-bg)
+
+.label-primary
+  label-extend($label-primary-bg)
+
+.label-success
+  label-extend($label-success-bg)
+
+.label-info
+  label-extend($label-info-bg)
+
+.label-warning
+  label-extend($label-warning-bg)
+
+.label-danger
+  label-extend($label-danger-bg)
+

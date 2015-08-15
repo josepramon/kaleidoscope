@@ -1,0 +1,72 @@
+nav:
+  -
+    title:  "Overview"
+    anchor: "#extras-overview"
+  -
+    title:  "Buttons"
+    anchor: "#buttons"
+    sections:
+      -
+        title:  "Inverted buttons"
+        anchor: "#buttons-inverted"
+      -
+        title:  "Circular buttons"
+        anchor: "#buttons-circular"
+  -
+    title:  "Breadcrumbs"
+    anchor: "#breadcrumbs"
+  -
+    title:  "Labels"
+    anchor: "#labels"
+    sections:
+      -
+        title:  "Ribbon labels"
+        anchor: "#labels-ribbon"
+      -
+        title:  "Corner ribbon labels"
+        anchor: "#labels-ribbon-corner"
+  -
+    title:  "Navs"
+    anchor: "#navs"
+    sections:
+      -
+        title:  "Tabs"
+        anchor: "#tabs"
+  -
+    title:  "Tables"
+    anchor: "#tables"
+    sections:
+      -
+        title:  "Sortable"
+        anchor: "#tables-sortable"
+      -
+        title:  "Columns"
+        anchor: "#tables-celled"
+      -
+        title:  "Filled"
+        anchor: "#tables-filled"
+      -
+        title:  "Inverted"
+        anchor: "#tables-inverted"
+      -
+        title:  "Complex"
+        anchor: "#tables-complex"
+  -
+    title:  "Containers"
+    anchor: "#containers"
+    sections:
+      -
+        title:  "Jumbotron"
+        anchor: "#jumbotron"
+      -
+        title:  "Blankslate"
+        anchor: "#blankslate"
+  -
+    title:  "Font awesome"
+    anchor: "#fontawesome"
+  -
+    title:  "Selectize"
+    anchor: "#selectize"
+  -
+    title:  "Toastr"
+    anchor: "#toastr"

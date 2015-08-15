@@ -1,0 +1,33 @@
+default:
+  description: 'Default task, rebuilds everything'
+  tasks:
+    - styles
+    - docs
+
+
+styles:
+  description: 'Transpile the theme stylus files into CSS'
+  tasks:
+    - clean:dist
+    - copy:fonts
+    - stylus:main
+
+
+docs:
+  description: 'Generate the theme documentation'
+  tasks:
+    - clean:docs
+    - copy:docsAssets
+    - copy:docsFonts
+    - copy:docsCss
+    - stylus:docs
+    - build-fontawesome-data
+    - assemble
+
+
+dev:
+  description: 'Builds eveerything and watch for file changes'
+  tasks:
+    - default
+    - browserSync
+    - watch

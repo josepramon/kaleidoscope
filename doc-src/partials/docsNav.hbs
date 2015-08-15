@@ -1,0 +1,16 @@
+<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+  <ul class="nav bs-docs-sidenav">
+    {{#each .}}
+      <li>
+        <a href="{{anchor}}">{{title}}</a>
+        {{#if sections}}
+          <ul class="nav">
+            {{#each sections}}
+              <li><a href="{{anchor}}">{{title}}</a></li>
+            {{/each}}
+          </ul>
+        {{/if}}
+      </li>
+    {{/each}}
+  </ul>
+</nav>

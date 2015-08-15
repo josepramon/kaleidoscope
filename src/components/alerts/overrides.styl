@@ -1,0 +1,31 @@
+.alert
+  box-shadow: $component-shadow
+
+.alert-success,
+.alert-info,
+.alert-warning,
+.alert-danger
+  a
+    color: #fff
+
+  .btn-link:not(.inverted):not(.circular) // give it a hight specificity to override the rule deffined in buttons.styl
+    color: #fff
+    anchor-hover-effect-variant(#fff)
+
+  &.alert-dismissable,
+  &.alert-dismissible
+    .close
+      color #fff
+
+
+.alert a:not(.btn)
+  cursor: pointer
+  text-decoration: none
+  font-weight $alert-link-font-weight
+  border-bottom: dotted 1px
+  background-color: rgba(255,255,255,0)
+  transition: background-color .2s, border-color .2s
+
+  &:hover
+    border-bottom-color: transparent
+    background-color: rgba(255,255,255,.3)

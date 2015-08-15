@@ -1,0 +1,205 @@
+/*
+  Bootstrap consistent theme for Toastr
+  Simple javascript toast notifications http://johnpapa.net http://www.toastrjs.com
+
+  Adaptation based on the toastr original css files, licensed under MIT license
+*/
+
+
+
+#toast-container
+  position: fixed
+  z-index: 999999
+
+#toast-container *
+  box-sizing: border-box
+
+
+
+// Toast element,
+// make it consistent with the bootstrap alerts
+.toast
+  position: relative
+  overflow: hidden
+  width: 300px
+  @extend .alert
+  @extend .alert-dismissible
+  box-shadow: $component-shadow-medium
+
+  &:hover
+    box-shadow: $component-shadow-intense
+    opacity: 1
+    cursor: pointer
+
+
+// Content
+.toast-title
+  @extend h4
+  @extend .alert h4
+
+
+.toast-message
+  word-wrap: break-word
+
+  a
+    @extend .alert a:not(.btn)
+
+
+.toast-close-button
+  @extend .close
+  @extend .alert-dismissible .close
+
+  &, &:hover
+    color: #fff
+
+button.toast-close-button
+  padding: 0
+  cursor: pointer
+  background: transparent
+  border: 0
+  -webkit-appearance: none
+
+
+.toast-progress
+  position: absolute
+  left: 0
+  bottom: 0
+  height: 4px
+  background-color: #000000
+  opacity: 0.4
+
+
+
+// Alternate colors
+.toast-success
+  @extend .alert-success
+
+.toast-error
+  @extend .alert-danger
+
+.toast-info
+  @extend .alert-info
+
+.toast-warning
+  @extend .alert-warning
+
+
+// Variants, with icons
+.toast-success,
+.toast-info,
+.toast-warning,
+.toast-error
+  padding-left: $alert-padding + 25
+
+  &:before
+    position: absolute
+    font-size: 18px
+    top:  $alert-padding
+    left: $alert-padding
+
+
+if $import-vendor-font-awesome
+  .toast-success,
+  .toast-info,
+  .toast-warning,
+  .toast-error
+    &:before
+      font-family: FontAwesome
+
+  .toast-warning:before
+    content: "\f071"
+
+  .toast-error:before
+    content: "\f057"
+
+  .toast-info:before
+    content: "\f05a"
+
+  .toast-success:before
+    content: "\f058"
+
+else
+  // use glyphicons as default
+  .toast-success,
+  .toast-info,
+  .toast-warning,
+  .toast-error
+    &:before
+      font-family: 'Glyphicons Halflings'
+
+  .toast-warning:before
+    content: "\e107"
+
+  .toast-error:before
+    content: "\e083"
+
+  .toast-info:before
+    content: "\e086"
+
+  .toast-success:before
+    content: "\e084"
+
+
+
+// Positioning & dimensions
+.toast-top-center,
+.toast-bottom-center,
+.toast-top-full-width,
+.toast-bottom-full-width
+  width: 100%
+
+.toast-top-center
+  top:   0
+  right: 0
+
+.toast-bottom-center
+  bottom: 0
+  right:  0
+
+.toast-top-full-width
+  top:   0
+  right: 0
+
+.toast-bottom-full-width
+  bottom: 0
+  right:  0
+
+.toast-top-left
+  top:   12px
+  left: 12px
+
+.toast-top-right
+  top:   12px
+  right: 12px
+
+.toast-bottom-right
+  right:  12px
+  bottom: 12px
+
+.toast-bottom-left
+  bottom: 12px
+  left:   12px
+
+#toast-container.toast-top-center > div,
+#toast-container.toast-bottom-center > div
+  width: 300px
+  margin: auto
+
+#toast-container.toast-top-full-width > div,
+#toast-container.toast-bottom-full-width > div
+  width: 96%
+  margin: auto
+
+
+// Responsive
+@media all and (max-width: 240px)
+  #toast-container
+    left:  8px
+    right: 8px
+
+  .toast
+    width: auto
+
+@media all and (min-width: 241px) and (max-width: 480px)
+  .toast
+    width: 18em

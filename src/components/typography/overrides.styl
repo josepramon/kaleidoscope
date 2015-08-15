@@ -1,0 +1,54 @@
+mark,
+.mark
+  color: $mark-color
+  background-color: $mark-bg
+
+
+
+a:not([class])
+  anchor-hover-effect()
+
+// fixes
+// --------------------------
+// elements to NOT apply this
+// TODO: this is fugly...
+.nav a:before,
+.pagination a:before,
+.pager a:before,
+.breadcrumb a:before,
+.dropdown-menu a:before,
+thead a:before,
+.panel-group .panel-heading a:before,
+a.disabled:before, a[disabled]:before,
+.toast a:before
+  content: none
+
+
+
+// Contextual colors
+.text-muted
+  color $text-muted
+
+.text-primary
+  text-emphasis-variant($brand-primary)
+
+.text-success
+  text-emphasis-variant($brand-success)
+
+.text-info
+  text-emphasis-variant($brand-info)
+
+.text-warning
+  text-emphasis-variant($brand-warning)
+
+.text-danger
+  text-emphasis-variant($brand-danger)
+
+
+// Contextual backgrounds
+.bg-primary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger
+  color #fff

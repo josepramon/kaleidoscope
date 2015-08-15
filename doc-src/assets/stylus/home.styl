@@ -1,0 +1,110 @@
+body.home
+  text-align: center
+
+  #global-header
+    height: 500px
+    padding-top: 100px
+    margin: 0
+
+    h1
+      width:  450px
+      height: 100px
+      margin: 0 auto
+      float: none
+
+      a
+        background-image: url(../images/logos/kaleidoscope450x100.png)
+
+    nav
+      height: 40px
+      border-bottom: solid 1px rgba(255,255,255,.5)
+      position: absolute
+      right:  0
+      top: 0
+
+      a
+        line-height: 40px
+
+  .lead
+    width: 400px
+    margin: 20px auto
+
+
+
+
+#download
+  position: relative
+  z-index: 1
+  position: absolute
+  top: 300px
+  left:  0
+  right: 0
+
+
+@import '../../../vendor/bootstrap-stylus/bootstrap/mixins/buttons'
+#download .btn
+  border-width: 2px
+  cursor: pointer
+  button-variant(#E3E2D4, transparent, #E3E2D4)
+  &:hover
+    button-variant(#292925, #E3E2D4, darken(#E3E2D4, 10%))
+
+
+.share
+  margin: 5px 0 30px
+  text-align: right
+
+
+
+.content-block
+  .inner
+    padding: 20px 0
+    width: 80%
+    margin: auto
+
+  h3
+    font-size: 20px
+
+  h2 + h3
+    margin-top: 30px
+
+
+#intro
+  img
+    margin: 0 auto 10px
+    max-width: 100px
+
+  h2
+    font-size: 20px
+
+#install
+  text-align: left
+  color: #fff
+  background-color: #88877a
+
+#bower:before
+  content: ''
+  display: inline-block
+  width: 30px
+  height: 30px
+  background: url(../images/home/bower.png) no-repeat
+  margin-right: 6px
+  position: relative
+  top: 7px
+
+#usage
+  text-align: left
+  color: #fff
+  background-color: #acab9f
+
+#opensource
+  .jumbotron
+    background-color: transparent
+  h3
+    font-size: 24px
+    &:before
+      display: block
+      margin: 20px auto
+      content: '\f09b'
+      font-family: FontAwesome
+      font-size: 48px

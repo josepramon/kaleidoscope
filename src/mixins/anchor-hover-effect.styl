@@ -1,0 +1,46 @@
+// animated underline :hover effect
+// adapted from the Semantic-ui (amazng lib. BTW) docs
+anchor-hover-effect-variant($color = $link-color)
+  &:before, &:hover:before
+    background-color: $color
+
+
+anchor-hover-effect($color = $link-color)
+  display: inline-block
+  position: relative
+  z-index: 0
+  transition: color 0.2s
+  outline: none
+
+  &:before
+    position: absolute
+    top: auto
+    bottom: -2px
+    left: 0
+    width: 100%
+    height: 1px
+    content: ''
+    transition: all 0.2s;
+    transform: scaleX(0)
+
+
+  &:hover
+    text-decoration: none
+
+  &:hover:before
+    transform: scaleX(1)
+
+  anchor-hover-effect-variant($color)
+
+
+
+// Font antialias bug on animated elements in Safari
+// https://bugs.webkit.org/show_bug.cgi?id=23364
+//
+// Please Apple, fix this shit already, the bug was reported on 2009.
+//
+// The weird selector is a hack to apply it only to Safari but not Chrome.
+// Taken from http://browserstrangeness.bitbucket.org/css_hacks.html#webkit
+//
+// (can't believe this works after the Stylus to CSS transpiling, but it does! \0/)
+_:-webkit-full-screen, _::-webkit-full-page-media, _:future, :root body { -webkit-font-smoothing: antialiased; }

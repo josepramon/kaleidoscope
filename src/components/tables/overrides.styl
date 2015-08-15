@@ -1,0 +1,38 @@
+// Tables
+.table
+  > thead > tr > th
+    border-bottom-width: 1px
+
+// apply the borders only to the table and rows
+.table-bordered
+  border-radius: $border-radius-base
+  border-collapse: separate
+  overflow: hidden
+
+  > thead,
+  > tbody,
+  > tfoot
+    > tr
+      > th,
+      > td
+        border-bottom-width: 0
+        border-left-width:   0
+        border-right-width:  0
+
+
+table-row-variant-fixColor($state, $color = #fff)
+  .table > thead > tr,
+  .table > tbody > tr,
+  .table > tfoot > tr
+    > td.{$state},
+    > th.{$state},
+    &.{$state} > td,
+    &.{$state} > th
+      &, a
+        color: $color
+
+
+table-row-variant-fixColor(success)
+table-row-variant-fixColor(info)
+table-row-variant-fixColor(warning)
+table-row-variant-fixColor(danger)

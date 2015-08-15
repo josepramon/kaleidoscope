@@ -1,0 +1,63 @@
+// Path where fonts (glyphicons, font-awesome, etc) will be placed
+$fontsPath     ?= './fonts/'
+
+// Bower packages directory
+$vendorPath    ?= '../vendor/'
+
+// Bootstrap stylus path
+$bootstrapPath = $vendorPath+'bootstrap-stylus/bootstrap/'
+
+
+// Web fonts:
+// ---------------------------------------------------------------------
+// Webfonts used for the main text and titles. This are the default
+// fonts used on this theme. If the `$font-family-sans-serif` and
+// `$headings-font-family` values are set before importing this file,
+// the default values will not be loaded.
+unless $font-family-sans-serif is defined
+  @import url('//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic')
+
+unless $headings-font-family is defined
+  @import url('//fonts.googleapis.com/css?family=Armata')
+
+
+
+// Config:
+// ---------------------------------------------------------------------
+
+// Bootstrap components config.
+// All the variables are conditionally set (?=) so they can be
+// overrided without altering the files on the config directory
+@require 'config/'
+
+// Configuration for other 3rd party libs
+@require 'config/vendor/*'
+
+
+// Bootstrap mixins
+@require $bootstrapPath+'mixins'
+
+// Custom mixins
+@require 'mixins/'
+
+
+
+// Base:
+// ---------------------------------------------------------------------
+@require $bootstrapPath+'normalize'
+@require $bootstrapPath+'scaffolding'
+@require $bootstrapPath+'utilities'
+
+
+
+// Components:
+// ---------------------------------------------------------------------
+
+// The built files on the `dist` directory include all the components (except
+// glyphicons, font-awesome is used intead, but can be overrided).
+//
+// If you need to create a lightweight version removing non needed components,
+// just set to false any of the values deffined in `import-config.styl`
+// before importing this file.
+@require 'import-config'
+@require 'components/'
