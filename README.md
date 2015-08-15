@@ -7,9 +7,7 @@ Kaleidoscope is an open source Bootstrap theme, with some extensions inspired on
 - Manually:  
   Download the latest release and copy the CSS and font files to your own project.
 - With Bower:  
-  ```bash
-  $ bower install kaleidoscope --save
-  ```
+  `$ bower install kaleidoscope --save`
 
 ## Usage
 
