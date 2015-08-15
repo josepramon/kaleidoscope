@@ -1,0 +1,4383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Theme extras</title>
+
+
+
+<link rel="stylesheet" href="assets/css/kaleidoscope.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/vendor/highlight.js/styles/solarized_dark.css">
+
+
+</head>
+<body class="extras">
+  <div class="wrapper">
+
+    <header id="global-header">
+  <h1>
+    <a href="index.html">
+      Mosaiqo theme
+    </a>
+  </h1>
+
+  
+
+
+  <nav>
+    <ul>
+      <li><a href="css.html" class="">CSS</a></li>
+      <li><a href="components.html" class="">Components</a></li>
+      <li><a href="javascript.html" class="">Javascript</a></li>
+      <li><a href="extras.html" class="active">Extras</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    <div class="container bs-docs-container">
+      <div class="row">
+
+        <main class="col-md-9" role="main">
+          
+
+<div class="bs-docs-section">
+  <h1 id="extras-overview" class="page-header">Overview</h1>
+
+  <p>Kaleidoscope its not just a Bootstrap theme. It extends it by adding some variants to the bootstrap own components, adding some new components and integrating some external libraries.</p>
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="buttons" class="page-header">Buttons</h1>
+
+  <p>The theme includes some additional button variants.</p>
+
+  <div>
+    <h2 id="buttons-inverted">Inverted buttons</h2>
+
+    <p>Buttons suitable to appear on dark backgrounds.</p>
+
+    <div class="bs-example spaced-rows">
+      <div class="row">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-block inverted">Normal</button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-default btn-block inverted">Default</button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-primary btn-block inverted">Primary</button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-success btn-block inverted">Success</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-info btn-block inverted">Info</button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-warning btn-block inverted">Warning</button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-danger btn-block inverted">Danger</button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-link btn-block inverted">Link</button>
+        </div>
+      </div>
+    </div>
+
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn inverted&quot;&gt;Normal&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default inverted&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary inverted&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success inverted&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info inverted&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning inverted&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger inverted&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link inverted&quot;&gt;Link&lt;/button&gt;</code></pre>
+
+
+  </div>
+
+  <div>
+    <h2 id="buttons-circular">Circular buttons</h2>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>Use only for icon buttons</h4>
+      <p>The circular button size is fixed, so it's not adequate to be used with textual content, unless the text is very short. If the text is longer than the available space, the button will overflow.</p>
+    </div>
+
+    <div class="bs-example spaced-rows">
+      <div class="row">
+        <div class="col-md-1">
+          <button type="button" class="btn circular" aria-label="Normal button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-default circular" aria-label="Default button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-primary circular" aria-label="Primary button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-success circular" aria-label="Success button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-info circular" aria-label="Info button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-warning circular" aria-label="Warning button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-danger circular" aria-label="Danger button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-link circular" aria-label="Link button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <button type="button" class="btn circular inverted" aria-label="Normal button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-default circular inverted" aria-label="Default button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-primary circular inverted" aria-label="Primary button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-success circular inverted" aria-label="Success button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-info circular inverted" aria-label="Info button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-warning circular inverted" aria-label="Warning button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-danger circular inverted" aria-label="Danger button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-link circular inverted" aria-label="Link button">
+            <i class="icon icon-home" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default circular&quot; aria-label=&quot;Default button&quot;&gt;
+  &lt;i class=&quot;icon icon-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default circular inverted&quot; aria-label=&quot;Default button&quot;&gt;
+  &lt;i class=&quot;icon icon-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+
+
+  </div>
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="breadcrumbs" class="page-header">Breadcrumbs</h1>
+  <p>In addition to the default bootstrap breadcumbs, there's an additional variant, inspired on <a href="http://bootflat.github.io">Bootflat</a> Bootstrap theme.</p>
+
+  <div class="bs-example">
+    <ol class="breadcrumb arrow">
+      <li><a href="#"><i class="icon icon-home"></i> Home</a></li>
+      <li><a href="#"><i class="icon icon-list-alt"></i> Library</a></li>
+      <li class="active"><span><i class="icon icon-calendar"></i> Data</span></li>
+    </ol>
+  </div>
+
+<pre><code class="language-html">&lt;ol class=&quot;breadcrumb arrow&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-home&quot;&gt;&lt;/i&gt; Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-list-alt&quot;&gt;&lt;/i&gt; Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;span&gt;&lt;i class=&quot;icon icon-calendar&quot;&gt;&lt;/i&gt; Data&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="labels" class="page-header">Labels</h1>
+
+  <h2 id="labels-ribbon">Ribbon labels</h2>
+  <div class="bs-example">
+    <div class="test-block" style="margin: 0 20px;">
+      <span class="label ribbon">Normal</span>
+      <strong>Foo bar</strong>
+      <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+      <span class="label label-default ribbon right">Default</span>
+      <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+      <span class="label label-primary ribbon"><i class="icon icon-apple"></i> Primary</span>
+      <p>Ground round strip steak beef, meatloaf chicken ball tip beef ribs sirloin pastrami t-bone capicola meatball pork.</p>
+      <span class="label label-success ribbon right">Success</span>
+      <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+      <span class="label label-info ribbon">Info</span>
+      <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+      <span class="label label-warning ribbon right">Warning</span>
+      <p>Ground round strip steak beef, meatloaf chicken ball tip beef ribs sirloin pastrami t-bone capicola meatball pork.</p>
+      <span class="label label-danger ribbon">Danger</span>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div&gt;
+  &lt;span class=&quot;label ribbon&quot;&gt;Normal&lt;/span&gt;
+  &lt;span class=&quot;label label-default ribbon right&quot;&gt;Default&lt;/span&gt;
+  &lt;span class=&quot;label label-primary ribbon&quot;&gt;&lt;i class=&quot;icon icon-apple&quot;&gt;&lt;/i&gt; Primary&lt;/span&gt;
+  &lt;span class=&quot;label label-success ribbon right&quot;&gt;Success&lt;/span&gt;
+  &lt;span class=&quot;label label-info ribbon&quot;&gt;Info&lt;/span&gt;
+  &lt;span class=&quot;label label-warning ribbon right&quot;&gt;Warning&lt;/span&gt;
+  &lt;span class=&quot;label label-danger ribbon&quot;&gt;Danger&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <h2 id="labels-ribbon-corner">Corner ribbon labels</h2>
+
+  <p>Corner ribbon labels must be inside a container with a <code>overflow: hidden</code></p>
+
+  <div class="bs-example">
+    <div class="test-block" style="overflow: hidden; padding: 3.5em">
+      <span class="label label-default ribbon-corner top-left">Default</span>
+      <span class="label label-primary ribbon-corner top-right"><i class="icon icon-apple"></i> Primary</span>
+
+      <span class="label label-info ribbon-corner bottom-left">Info</span>
+      <span class="label label-danger ribbon-corner bottom-right"><i class="icon icon-github"></i> Danger</span>
+
+      <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+      <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+      <p>Ground round strip steak beef, meatloaf chicken ball tip beef ribs sirloin pastrami t-bone capicola meatball pork.</p>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div style=&quot;overflow: hidden;&quot;&gt;
+  &lt;span class=&quot;label label-default ribbon-corner top-left&quot;&gt;Default&lt;/span&gt;
+  &lt;span class=&quot;label label-primary ribbon-corner top-right&quot;&gt;&lt;i class=&quot;icon icon-apple&quot;&gt;&lt;/i&gt; Primary&lt;/span&gt;
+  &lt;span class=&quot;label label-info ribbon-corner bottom-left&quot;&gt;Info&lt;/span&gt;
+  &lt;span class=&quot;label label-danger ribbon-corner bottom-right&quot;&gt;&lt;i class=&quot;icon icon-github&quot;&gt;&lt;/i&gt; Danger&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="navs" class="page-header">Navs</h1>
+
+  <h2 id="tabs">Tabs</h2>
+  <p>The theme includes some variants for the tabs, allowing its placement on any side.</p>
+
+  <div class="bs-example contrasted">
+
+    <div class="panel">
+      <div class="tabbable tabs-below">
+        <div class="tab-content">
+          <div class="tab-pane fade active in" id="home2">
+            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+          </div>
+          <div class="tab-pane fade" id="profile2">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+          </div>
+          <div class="tab-pane fade" id="dropdown2-1">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...</p>
+          </div>
+          <div class="tab-pane fade" id="dropdown2-2">
+            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche ...</p>
+          </div>
+        </div>
+        <ul id="myTab2" class="nav nav-tabs nav-justified">
+          <li class="active">
+            <a href="#home2" data-toggle="tab">Home</a>
+          </li>
+          <li>
+            <a href="#profile2" data-toggle="tab">Profile</a>
+          </li>
+          <li class="dropdown dropup">
+            <a href="#" id="myTabDrop2-1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+              <li>
+                <a href="#dropdown2-1" tabindex="-1" data-toggle="tab">@fat</a>
+              </li>
+              <li>
+                <a href="#dropdown2-2" tabindex="-1" data-toggle="tab">@mdo</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;tabbable tabs-below&quot;&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;div class=&quot;tab-pane fade active in&quot; id=&quot;home2&quot;&gt;
+        &lt;p&gt;Raw denim you probably haven&#39;t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile2&quot;&gt;
+        &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney&#39;s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tab-pane fade&quot; id=&quot;dropdown2-1&quot;&gt;
+        &lt;p&gt;Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney&#39;s organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tab-pane fade&quot; id=&quot;dropdown2-2&quot;&gt;
+        &lt;p&gt;Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche ...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;ul id=&quot;myTab2&quot; class=&quot;nav nav-tabs nav-justified&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;
+        &lt;a href=&quot;#home2&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#profile2&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;dropdown dropup&quot;&gt;
+        &lt;a href=&quot;#&quot; id=&quot;myTabDrop2-1&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;myTabDrop1&quot;&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#dropdown2-1&quot; tabindex=&quot;-1&quot; data-toggle=&quot;tab&quot;&gt;@fat&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#dropdown2-2&quot; tabindex=&quot;-1&quot; data-toggle=&quot;tab&quot;&gt;@mdo&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <div class="bs-example contrasted">
+
+    <div class="panel">
+      <div class="tabbable tabs-left clearfix">
+        <ul id="myTab1" class="nav nav-tabs">
+          <li class="active">
+            <a href="#home3" data-toggle="tab">Home</a>
+          </li>
+          <li>
+            <a href="#profile3" data-toggle="tab">Profile</a>
+          </li>
+          <li>
+            <a href="#myTabDrop3" data-toggle="tab">Dropdown</a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active in" id="home3">
+            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+          </div>
+          <div class="tab-pane fade" id="profile3">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+          </div>
+          <div class="tab-pane fade" id="myTabDrop3">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;tabbable tabs-left clearfix&quot;&gt;
+    &lt;ul id=&quot;myTab1&quot; class=&quot;nav nav-tabs&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;
+        &lt;a href=&quot;#home3&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#profile3&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#myTabDrop3&quot; data-toggle=&quot;tab&quot;&gt;Dropdown&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
+      &lt;div class=&quot;tab-pane fade active in&quot; id=&quot;home3&quot;&gt;
+        &lt;p&gt;Raw denim you probably haven&#39;t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile3&quot;&gt;
+        &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney&#39;s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tab-pane fade&quot; id=&quot;myTabDrop3&quot;&gt;
+        &lt;p&gt;Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney&#39;s organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <div class="bs-example contrasted">
+
+    <div class="panel">
+      <div class="tabbable tabs-right clearfix">
+        <ul id="myTab1" class="nav nav-tabs">
+          <li class="active">
+            <a href="#home4" data-toggle="tab">Home</a>
+          </li>
+          <li>
+            <a href="#profile4" data-toggle="tab">Profile</a>
+          </li>
+          <li>
+            <a href="#myTabDrop4" data-toggle="tab">Dropdown</a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active in" id="home4">
+            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+          </div>
+          <div class="tab-pane fade" id="profile4">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+          </div>
+          <div class="tab-pane fade" id="myTabDrop4">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;tabbable tabs-right clearfix&quot;&gt;
+    &lt;ul id=&quot;myTab1&quot; class=&quot;nav nav-tabs&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;
+        &lt;a href=&quot;#home4&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#profile4&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#myTabDrop4&quot; data-toggle=&quot;tab&quot;&gt;Dropdown&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
+      &lt;div class=&quot;tab-pane fade active in&quot; id=&quot;home4&quot;&gt;
+        &lt;p&gt;Raw denim you probably haven&#39;t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile4&quot;&gt;
+        &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney&#39;s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tab-pane fade&quot; id=&quot;myTabDrop4&quot;&gt;
+        &lt;p&gt;Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney&#39;s organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="tables" class="page-header">Additional table variants</h1>
+
+  <h2 id="tables-sortable">Sortable indicators</h2>
+
+  <div class="bs-example">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th class="sortable ascending">Second</th>
+          <th class="sortable descending">Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+<pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First&lt;/th&gt;
+      &lt;th class=&quot;sortable ascending&quot;&gt;Second&lt;/th&gt;
+      &lt;th class=&quot;sortable descending&quot;&gt;Third&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+
+
+  <h2 id="tables-celled">Columns</h2>
+  <p>The <code>table-bordered</code> tables only have borders on the table and the rows. Add the <code>celled</code> class to add borders to the cells </p>
+
+  <div class="bs-example">
+
+    <table class="table table-bordered celled">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+<pre><code class="language-html">&lt;table class=&quot;table table-bordered celled&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First&lt;/th&gt;
+      &lt;th&gt;Second&lt;/th&gt;
+      &lt;th&gt;Third&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+
+
+  <h2 id="tables-filled">Filled tables</h2>
+  <p>The tables are transparent by default. The <code>filled</code> class adds a background color to the cells.</p>
+
+  <div class="bs-example contrasted">
+
+    <table class="table filled">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+<pre><code class="language-html">&lt;table class=&quot;table filled&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First&lt;/th&gt;
+      &lt;th&gt;Second&lt;/th&gt;
+      &lt;th&gt;Third&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+
+
+  <h2 id="tables-inverted">Inverted tables</h2>
+
+  <div class="bs-example">
+
+    <table class="table inverted">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+<pre><code class="language-html">&lt;table class=&quot;table inverted&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First&lt;/th&gt;
+      &lt;th&gt;Second&lt;/th&gt;
+      &lt;th&gt;Third&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+  <p>Inverted tables can have color variants.</p>
+
+  <div class="bs-example">
+
+    <table class="table inverted primary">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table inverted info">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table inverted success">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table inverted warning">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table inverted danger">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+<pre><code class="language-html">&lt;table class=&quot;table inverted primary&quot;&gt;...&lt;/table&gt;
+
+&lt;table class=&quot;table inverted info&quot;&gt;...&lt;/table&gt;
+
+&lt;table class=&quot;table inverted success&quot;&gt;...&lt;/table&gt;
+
+&lt;table class=&quot;table inverted warning&quot;&gt;...&lt;/table&gt;
+
+&lt;table class=&quot;table inverted danger&quot;&gt;...&lt;/table&gt;</code></pre>
+
+
+
+
+  <h2 id="tables-complex">Complex tables</h2>
+  <p>The bordered tables have rounded borders and some other effects. In order to implement that effects, that tables need a <code>border-collapse: separate;</code>, and that rule can cause some problems on complex tables with colspans or rowspans. So apply a <code>complex</code> class to disable that rule.</p>
+
+  <div class="bs-example">
+
+    <table class="table table-bordered celled complex">
+      <thead>
+        <tr>
+          <th rowspan="2">First</th>
+          <th rowspan="2">Second</th>
+          <th colspan="2">Grouped</th>
+        </tr>
+        <tr>
+          <th>Third</th>
+          <th>Fourth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+<pre><code class="language-html">&lt;table class=&quot;table table-bordered complex&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First&lt;/th&gt;
+      &lt;th&gt;Second&lt;/th&gt;
+      &lt;th&gt;Third&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="containers" class="page-header">Containers</h1>
+
+
+  <h2 id="jumbotron">Jumbotron</h2>
+  <p>Jumbotron component has been expanded to support full width images and caroussels.</p>
+
+  <div class="bs-example">
+    <div class="jumbotron">
+      <div class="jumbotron-photo"><img src="http://lorempixel.com/555/333/cats/1" /></div>
+      <h2>Oh hai!</h2>
+      <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+      <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;jumbotron&quot;&gt;
+  &lt;div class=&quot;jumbotron-photo&quot;&gt;&lt;img src=&quot;http://lorempixel.com/555/333/cats/1&quot; /&gt;&lt;/div&gt;
+  &lt;h2&gt;Oh hai!&lt;/h2&gt;
+  &lt;p&gt;Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.&lt;/p&gt;
+  &lt;p&gt;Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <div class="bs-example">
+
+    <div class="jumbotron">
+      <div id="carousel-example" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example" data-slide-to="1"></li>
+          <li data-target="#carousel-example" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active"><img src="http://lorempixel.com/555/333/cats/2"></div>
+          <div class="item"><img src="http://lorempixel.com/555/333/cats/3"></div>
+          <div class="item"><img src="http://lorempixel.com/555/333/cats/4"></div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+          <span class="icon icon-prev icon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example" data-slide="next">
+          <span class="icon icon-next icon-chevron-right"></span>
+        </a>
+      </div>
+      <h2>Oh hai!</h2>
+      <p>Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.</p>
+      <p>Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.</p>
+    </div>
+
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;jumbotron&quot;&gt;
+  &lt;div id=&quot;carousel-example&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+    &lt;ol class=&quot;carousel-indicators&quot;&gt;
+      &lt;li data-target=&quot;#carousel-example&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+      &lt;li data-target=&quot;#carousel-example&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+      &lt;li data-target=&quot;#carousel-example&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;div class=&quot;carousel-inner&quot;&gt;
+      &lt;div class=&quot;item active&quot;&gt;&lt;img src=&quot;http://lorempixel.com/555/333/cats/2&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;&lt;img src=&quot;http://lorempixel.com/555/333/cats/3&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;&lt;img src=&quot;http://lorempixel.com/555/333/cats/4&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel-example&quot; data-slide=&quot;prev&quot;&gt;
+      &lt;span class=&quot;icon icon-prev icon-chevron-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel-example&quot; data-slide=&quot;next&quot;&gt;
+      &lt;span class=&quot;icon icon-next icon-chevron-right&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;h2&gt;Oh hai!&lt;/h2&gt;
+  &lt;p&gt;Bacon ipsum dolor amet turducken alcatra rump shank landjaeger ribeye short loin chuck.&lt;/p&gt;
+  &lt;p&gt;Kevin pancetta jerky andouille bresaola shankle frankfurter shoulder filet mignon turducken ball tip.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+
+  <h2 id="blankslate">Blankslate</h2>
+  <p>Blankslates are for when there is a lack of content within a page or section. Use them as placeholders to tell users why something isn’t there. Be sure to provide an action to add content as well.</p>
+  <p>Ported from <a href="http://primercss.io">PrimerCSS</a></p>
+
+
+  <h3>Basic example</h3>
+
+  <div class="bs-example">
+    <div class="blankslate">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;blankslate&quot;&gt;
+  &lt;h3&gt;This is a blank slate&lt;/h3&gt;
+  &lt;p&gt;Use it to provide information when no dynamic content exists.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <h3>Large format, with icons</h3>
+
+  <div class="bs-example">
+    <div class="blankslate large-format">
+      <span class="icon icon-github"></span>
+      <span class="icon icon-tags"></span>
+      <span class="icon icon-code-fork"></span>
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;blankslate large-format&quot;&gt;
+  &lt;span class=&quot;icon icon-github&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;icon icon-tags&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;icon icon-code-fork&quot;&gt;&lt;/span&gt;
+  &lt;h3&gt;This is a blank slate&lt;/h3&gt;
+  &lt;p&gt;Use it to provide information when no dynamic content exists.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <h3>Fixed width</h3>
+  <p>Narrows the blankslate container to not occupy the entire available width.</p>
+
+  <div class="bs-example">
+    <div class="blankslate has-fixed-width">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;blankslate has-fixed-width&quot;&gt;
+  &lt;h3&gt;This is a blank slate&lt;/h3&gt;
+  &lt;p&gt;Use it to provide information when no dynamic content exists.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <h3>Capped</h3>
+  <p>Removes the <code>border-radius</code> on the top corners.</p>
+
+  <div class="bs-example">
+    <div class="blankslate capped">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;blankslate capped&quot;&gt;
+  &lt;h3&gt;This is a blank slate&lt;/h3&gt;
+  &lt;p&gt;Use it to provide information when no dynamic content exists.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <h3>Spacious</h3>
+  <p>Significantly increases the vertical padding.</p>
+
+  <div class="bs-example">
+    <div class="blankslate spacious">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;blankslate spacious&quot;&gt;
+  &lt;h3&gt;This is a blank slate&lt;/h3&gt;
+  &lt;p&gt;Use it to provide information when no dynamic content exists.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+  <h3>No background</h3>
+  <p>Removes the <code>background-color</code> and <code>border</code>.</p>
+
+  <div class="bs-example">
+    <div class="blankslate clean-background">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </div>
+  </div>
+
+<pre><code class="language-html">&lt;div class=&quot;blankslate clean-background&quot;&gt;
+  &lt;h3&gt;This is a blank slate&lt;/h3&gt;
+  &lt;p&gt;Use it to provide information when no dynamic content exists.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="fontawesome" class="page-header">Font awesome</h1>
+
+  <p><a href="http://fortawesome.github.io/Font-Awesome/">Font awesome</a> icons can be used instead of Glyphicons. Both icon libraries can be used simultaneusly.</p>
+
+  <p>The default Font awesome prefix <code>fa</code> has been replaced to a more generic one <code>icon</code>, so it's easier to use another icon library.</p>
+
+  <div class="bs-glyphicons">
+    <ul class="bs-glyphicons-list">
+      
+        <li>
+          <span class="icon icon-glass" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-glass</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-music" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-music</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-search" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-search</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-envelope-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-envelope-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-heart" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-heart</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-star" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-star</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-star-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-star-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-user" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-user</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-film" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-film</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-th-large" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-th-large</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-th" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-th</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-th-list" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-th-list</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-check" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-check</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-remove" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-remove</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-close" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-close</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-times" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-times</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-search-plus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-search-plus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-search-minus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-search-minus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-power-off" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-power-off</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-signal" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-signal</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-gear" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-gear</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cog" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cog</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-trash-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-trash-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-home" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-home</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-clock-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-clock-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-road" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-road</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-download" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-download</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-circle-o-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-circle-o-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-circle-o-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-circle-o-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-inbox" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-inbox</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-play-circle-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-play-circle-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rotate-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rotate-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-repeat" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-repeat</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-refresh" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-refresh</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-list-alt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-list-alt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-lock" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-lock</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-flag" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-flag</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-headphones" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-headphones</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-volume-off" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-volume-off</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-volume-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-volume-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-volume-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-volume-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-qrcode" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-qrcode</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-barcode" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-barcode</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tag" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tag</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tags" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tags</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-book" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-book</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bookmark" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bookmark</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-print" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-print</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-camera" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-camera</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-font" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-font</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bold" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bold</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-italic" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-italic</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-text-height" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-text-height</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-text-width" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-text-width</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-align-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-align-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-align-center" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-align-center</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-align-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-align-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-align-justify" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-align-justify</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-list" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-list</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-dedent" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-dedent</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-outdent" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-outdent</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-indent" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-indent</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-video-camera" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-video-camera</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-photo" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-photo</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-image" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-image</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-picture-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-picture-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pencil" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pencil</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-map-marker" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-map-marker</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-adjust" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-adjust</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tint" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tint</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-edit" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-edit</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pencil-square-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pencil-square-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-share-square-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-share-square-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-check-square-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-check-square-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrows" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrows</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-step-backward" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-step-backward</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-fast-backward" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-fast-backward</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-backward" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-backward</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-play" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-play</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pause" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pause</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-stop" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-stop</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-forward" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-forward</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-fast-forward" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-fast-forward</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-step-forward" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-step-forward</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-eject" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-eject</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chevron-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chevron-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chevron-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chevron-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-plus-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-plus-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-minus-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-minus-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-times-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-times-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-check-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-check-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-question-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-question-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-info-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-info-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-crosshairs" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-crosshairs</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-times-circle-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-times-circle-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-check-circle-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-check-circle-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ban" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ban</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mail-forward" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mail-forward</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-share" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-share</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-expand" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-expand</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-compress" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-compress</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-plus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-plus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-minus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-minus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-asterisk" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-asterisk</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-exclamation-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-exclamation-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-gift" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-gift</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-leaf" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-leaf</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-fire" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-fire</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-eye" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-eye</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-eye-slash" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-eye-slash</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-warning" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-warning</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-exclamation-triangle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-exclamation-triangle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-plane" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-plane</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-calendar" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-calendar</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-random" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-random</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-comment" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-comment</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-magnet" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-magnet</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chevron-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chevron-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chevron-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chevron-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-retweet" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-retweet</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-shopping-cart" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-shopping-cart</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-folder" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-folder</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-folder-open" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-folder-open</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrows-v" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrows-v</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrows-h" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrows-h</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bar-chart-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bar-chart-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bar-chart" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bar-chart</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-twitter-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-twitter-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-facebook-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-facebook-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-camera-retro" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-camera-retro</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-key" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-key</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-gears" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-gears</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cogs" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cogs</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-comments" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-comments</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-thumbs-o-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-thumbs-o-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-thumbs-o-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-thumbs-o-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-star-half" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-star-half</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-heart-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-heart-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sign-out" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sign-out</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-linkedin-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-linkedin-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-thumb-tack" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-thumb-tack</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-external-link" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-external-link</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sign-in" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sign-in</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-trophy" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-trophy</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-github-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-github-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-upload" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-upload</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-lemon-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-lemon-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-phone" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-phone</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-square-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-square-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bookmark-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bookmark-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-phone-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-phone-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-twitter" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-twitter</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-facebook-f" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-facebook-f</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-facebook" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-facebook</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-github" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-github</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-unlock" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-unlock</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-credit-card" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-credit-card</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rss" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rss</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-hdd-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-hdd-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bullhorn" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bullhorn</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bell" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bell</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-certificate" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-certificate</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-hand-o-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-hand-o-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-hand-o-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-hand-o-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-hand-o-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-hand-o-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-hand-o-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-hand-o-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-circle-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-circle-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-circle-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-circle-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-circle-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-circle-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-circle-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-circle-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-globe" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-globe</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-wrench" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-wrench</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tasks" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tasks</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-filter" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-filter</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-briefcase" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-briefcase</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrows-alt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrows-alt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-group" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-group</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-users" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-users</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chain" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chain</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-link" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-link</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cloud" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cloud</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-flask" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-flask</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cut" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cut</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-scissors" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-scissors</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-copy" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-copy</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-files-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-files-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-paperclip" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-paperclip</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-save" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-save</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-floppy-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-floppy-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-navicon" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-navicon</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-reorder" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-reorder</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bars" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bars</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-list-ul" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-list-ul</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-list-ol" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-list-ol</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-strikethrough" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-strikethrough</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-underline" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-underline</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-table" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-table</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-magic" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-magic</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-truck" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-truck</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pinterest" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pinterest</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pinterest-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pinterest-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-google-plus-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-google-plus-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-google-plus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-google-plus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-money" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-money</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-caret-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-caret-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-caret-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-caret-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-caret-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-caret-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-caret-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-caret-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-columns" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-columns</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-unsorted" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-unsorted</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-desc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-desc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-asc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-asc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-envelope" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-envelope</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-linkedin" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-linkedin</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rotate-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rotate-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-undo" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-undo</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-legal" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-legal</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-gavel" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-gavel</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-dashboard" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-dashboard</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tachometer" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tachometer</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-comment-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-comment-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-comments-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-comments-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-flash" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-flash</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bolt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bolt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sitemap" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sitemap</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-umbrella" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-umbrella</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-paste" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-paste</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-clipboard" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-clipboard</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-lightbulb-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-lightbulb-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-exchange" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-exchange</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cloud-download" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cloud-download</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cloud-upload" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cloud-upload</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-user-md" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-user-md</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-stethoscope" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-stethoscope</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-suitcase" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-suitcase</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bell-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bell-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-coffee" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-coffee</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cutlery" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cutlery</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-text-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-text-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-building-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-building-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-hospital-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-hospital-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ambulance" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ambulance</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-medkit" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-medkit</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-fighter-jet" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-fighter-jet</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-beer" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-beer</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-h-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-h-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-plus-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-plus-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angle-double-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angle-double-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angle-double-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angle-double-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angle-double-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angle-double-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angle-double-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angle-double-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angle-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angle-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angle-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angle-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angle-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angle-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angle-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angle-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-desktop" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-desktop</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-laptop" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-laptop</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tablet" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tablet</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mobile-phone" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mobile-phone</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mobile" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mobile</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-circle-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-circle-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-quote-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-quote-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-quote-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-quote-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-spinner" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-spinner</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mail-reply" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mail-reply</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-reply" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-reply</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-github-alt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-github-alt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-folder-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-folder-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-folder-open-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-folder-open-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-smile-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-smile-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-frown-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-frown-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-meh-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-meh-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-gamepad" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-gamepad</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-keyboard-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-keyboard-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-flag-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-flag-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-flag-checkered" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-flag-checkered</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-terminal" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-terminal</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-code" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-code</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mail-reply-all" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mail-reply-all</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-reply-all" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-reply-all</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-star-half-empty" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-star-half-empty</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-star-half-full" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-star-half-full</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-star-half-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-star-half-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-location-arrow" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-location-arrow</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-crop" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-crop</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-code-fork" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-code-fork</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-unlink" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-unlink</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chain-broken" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chain-broken</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-question" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-question</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-info" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-info</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-exclamation" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-exclamation</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-superscript" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-superscript</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-subscript" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-subscript</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-eraser" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-eraser</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-puzzle-piece" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-puzzle-piece</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-microphone" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-microphone</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-microphone-slash" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-microphone-slash</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-shield" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-shield</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-calendar-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-calendar-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-fire-extinguisher" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-fire-extinguisher</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rocket" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rocket</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-maxcdn" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-maxcdn</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chevron-circle-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chevron-circle-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chevron-circle-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chevron-circle-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chevron-circle-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chevron-circle-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-chevron-circle-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-chevron-circle-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-html5" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-html5</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-css3" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-css3</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-anchor" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-anchor</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-unlock-alt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-unlock-alt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bullseye" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bullseye</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ellipsis-h" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ellipsis-h</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ellipsis-v" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ellipsis-v</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rss-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rss-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-play-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-play-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ticket" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ticket</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-minus-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-minus-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-minus-square-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-minus-square-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-level-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-level-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-level-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-level-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-check-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-check-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pencil-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pencil-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-external-link-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-external-link-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-share-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-share-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-compass" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-compass</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-toggle-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-toggle-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-caret-square-o-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-caret-square-o-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-toggle-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-toggle-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-caret-square-o-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-caret-square-o-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-toggle-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-toggle-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-caret-square-o-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-caret-square-o-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-euro" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-euro</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-eur" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-eur</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-gbp" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-gbp</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-dollar" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-dollar</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-usd" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-usd</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rupee" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rupee</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-inr" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-inr</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cny" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cny</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rmb" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rmb</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-yen" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-yen</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-jpy" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-jpy</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ruble" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ruble</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rouble" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rouble</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rub" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rub</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-won" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-won</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-krw" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-krw</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bitcoin" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bitcoin</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-btc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-btc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-text" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-text</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-alpha-asc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-alpha-asc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-alpha-desc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-alpha-desc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-amount-asc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-amount-asc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-amount-desc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-amount-desc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-numeric-asc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-numeric-asc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sort-numeric-desc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sort-numeric-desc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-thumbs-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-thumbs-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-thumbs-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-thumbs-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-youtube-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-youtube-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-youtube" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-youtube</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-xing" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-xing</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-xing-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-xing-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-youtube-play" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-youtube-play</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-dropbox" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-dropbox</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-stack-overflow" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-stack-overflow</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-instagram" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-instagram</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-flickr" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-flickr</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-adn" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-adn</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bitbucket" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bitbucket</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bitbucket-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bitbucket-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tumblr" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tumblr</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tumblr-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tumblr-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-long-arrow-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-long-arrow-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-long-arrow-up" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-long-arrow-up</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-long-arrow-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-long-arrow-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-long-arrow-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-long-arrow-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-apple" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-apple</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-windows" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-windows</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-android" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-android</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-linux" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-linux</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-dribbble" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-dribbble</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-skype" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-skype</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-foursquare" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-foursquare</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-trello" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-trello</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-female" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-female</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-male" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-male</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-gittip" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-gittip</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-gratipay" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-gratipay</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sun-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sun-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-moon-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-moon-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-archive" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-archive</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bug" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bug</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-vk" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-vk</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-weibo" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-weibo</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-renren" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-renren</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pagelines" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pagelines</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-stack-exchange" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-stack-exchange</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-circle-o-right" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-circle-o-right</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-arrow-circle-o-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-arrow-circle-o-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-toggle-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-toggle-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-caret-square-o-left" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-caret-square-o-left</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-dot-circle-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-dot-circle-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-wheelchair" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-wheelchair</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-vimeo-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-vimeo-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-turkish-lira" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-turkish-lira</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-try" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-try</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-plus-square-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-plus-square-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-space-shuttle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-space-shuttle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-slack" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-slack</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-envelope-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-envelope-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-wordpress" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-wordpress</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-openid" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-openid</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-institution" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-institution</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bank" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bank</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-university" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-university</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mortar-board" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mortar-board</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-graduation-cap" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-graduation-cap</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-yahoo" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-yahoo</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-google" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-google</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-reddit" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-reddit</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-reddit-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-reddit-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-stumbleupon-circle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-stumbleupon-circle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-stumbleupon" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-stumbleupon</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-delicious" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-delicious</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-digg" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-digg</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pied-piper" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pied-piper</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pied-piper-alt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pied-piper-alt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-drupal" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-drupal</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-joomla" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-joomla</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-language" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-language</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-fax" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-fax</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-building" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-building</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-child" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-child</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-paw" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-paw</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-spoon" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-spoon</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cube" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cube</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cubes" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cubes</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-behance" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-behance</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-behance-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-behance-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-steam" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-steam</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-steam-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-steam-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-recycle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-recycle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-automobile" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-automobile</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-car" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-car</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cab" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cab</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-taxi" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-taxi</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tree" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tree</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-spotify" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-spotify</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-deviantart" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-deviantart</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-soundcloud" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-soundcloud</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-database" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-database</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-pdf-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-pdf-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-word-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-word-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-excel-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-excel-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-powerpoint-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-powerpoint-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-photo-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-photo-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-picture-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-picture-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-image-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-image-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-zip-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-zip-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-archive-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-archive-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-sound-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-sound-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-audio-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-audio-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-movie-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-movie-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-video-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-video-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-file-code-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-file-code-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-vine" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-vine</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-codepen" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-codepen</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-jsfiddle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-jsfiddle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-life-bouy" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-life-bouy</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-life-buoy" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-life-buoy</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-life-saver" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-life-saver</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-support" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-support</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-life-ring" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-life-ring</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-circle-o-notch" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-circle-o-notch</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ra" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ra</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-rebel" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-rebel</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ge" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ge</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-empire" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-empire</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-git-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-git-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-git" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-git</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-hacker-news" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-hacker-news</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tencent-weibo" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tencent-weibo</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-qq" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-qq</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-wechat" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-wechat</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-weixin" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-weixin</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-send" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-send</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-paper-plane" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-paper-plane</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-send-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-send-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-paper-plane-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-paper-plane-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-history" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-history</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-genderless" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-genderless</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-circle-thin" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-circle-thin</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-header" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-header</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-paragraph" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-paragraph</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sliders" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sliders</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-share-alt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-share-alt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-share-alt-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-share-alt-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bomb" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bomb</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-soccer-ball-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-soccer-ball-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-futbol-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-futbol-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-tty" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-tty</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-binoculars" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-binoculars</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-plug" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-plug</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-slideshare" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-slideshare</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-twitch" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-twitch</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-yelp" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-yelp</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-newspaper-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-newspaper-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-wifi" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-wifi</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-calculator" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-calculator</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-paypal" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-paypal</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-google-wallet" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-google-wallet</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cc-visa" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cc-visa</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cc-mastercard" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cc-mastercard</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cc-discover" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cc-discover</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cc-amex" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cc-amex</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cc-paypal" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cc-paypal</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cc-stripe" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cc-stripe</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bell-slash" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bell-slash</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bell-slash-o" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bell-slash-o</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-trash" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-trash</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-copyright" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-copyright</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-at" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-at</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-eyedropper" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-eyedropper</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-paint-brush" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-paint-brush</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-birthday-cake" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-birthday-cake</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-area-chart" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-area-chart</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pie-chart" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pie-chart</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-line-chart" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-line-chart</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-lastfm" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-lastfm</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-lastfm-square" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-lastfm-square</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-toggle-off" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-toggle-off</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-toggle-on" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-toggle-on</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bicycle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bicycle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ioxhost" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ioxhost</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-angellist" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-angellist</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cc" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cc</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-shekel" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-shekel</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sheqel" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sheqel</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ils" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ils</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-meanpath" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-meanpath</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-buysellads" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-buysellads</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-connectdevelop" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-connectdevelop</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-dashcube" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-dashcube</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-forumbee" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-forumbee</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-leanpub" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-leanpub</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-sellsy" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-sellsy</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-shirtsinbulk" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-shirtsinbulk</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-simplybuilt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-simplybuilt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-skyatlas" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-skyatlas</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cart-plus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cart-plus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-cart-arrow-down" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-cart-arrow-down</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-diamond" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-diamond</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-ship" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-ship</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-user-secret" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-user-secret</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-motorcycle" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-motorcycle</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-street-view" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-street-view</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-heartbeat" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-heartbeat</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-venus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-venus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mars" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mars</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mercury" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mercury</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-transgender" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-transgender</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-transgender-alt" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-transgender-alt</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-venus-double" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-venus-double</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mars-double" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mars-double</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-venus-mars" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-venus-mars</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mars-stroke" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mars-stroke</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mars-stroke-v" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mars-stroke-v</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-mars-stroke-h" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-mars-stroke-h</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-neuter" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-neuter</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-facebook-official" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-facebook-official</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-pinterest-p" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-pinterest-p</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-whatsapp" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-whatsapp</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-server" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-server</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-user-plus" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-user-plus</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-user-times" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-user-times</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-hotel" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-hotel</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-bed" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-bed</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-viacoin" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-viacoin</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-train" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-train</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-subway" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-subway</span>
+        </li>
+      
+        <li>
+          <span class="icon icon-medium" aria-hidden="true"></span>
+          <span class="glyphicon-class">icon icon-medium</span>
+        </li>
+      
+    </ul>
+  </div>
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="selectize" class="page-header">Selectize</h1>
+
+  <p>The theme includes styles for <a href="http://brianreavis.github.io/selectize.js/">Selectize</a>, an amazing library to customise and extend the <code>&lt;select&gt;</code> and <code>&lt;input&gt;</code> elements.</p>
+
+
+  <h2>Examples:</h2>
+
+  <div>
+    <h3>Tagging</h3>
+
+    <div class="bs-example">
+      <label for="selectize-input-tags">Tags:</label>
+      <input type="text" id="selectize-input-tags" value="awesome,neat">
+    </div>
+
+    <div class="bs-example">
+      <label for="selectize-input-tags2">Tags:</label>
+      <input type="text" id="selectize-input-tags2" value="awesome,neat">
+    </div>
+
+  </div>
+
+
+  <div>
+    <h3>Email Contacts</h3>
+
+    <div class="bs-example">
+      <label for="selectize-select-to">Email:</label>
+      <select id="selectize-select-to" class="contacts" placeholder="Pick some people..."></select>
+    </div>
+
+  </div>
+
+
+  <div>
+    <h3>Option Groups</h3>
+
+    <div class="bs-example">
+      <label for="selectize-select-gear">Gear:</label>
+      <select id="selectize-select-gear" class="demo-default" placeholder="Select gear...">
+        <option value="">Select gear...</option>
+        <optgroup label="Climbing">
+          <option value="pitons">Pitons</option>
+          <option value="cams">Cams</option>
+          <option value="nuts">Nuts</option>
+          <option value="bolts">Bolts</option>
+          <option value="stoppers">Stoppers</option>
+          <option value="sling">Sling</option>
+        </optgroup>
+        <optgroup label="Skiing">
+          <option value="skis">Skis</option>
+          <option value="skins">Skins</option>
+          <option value="poles">Poles</option>
+        </optgroup>
+      </select>
+    </div>
+  </div>
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="toastr" class="page-header">Toastr</h1>
+
+  <p>Kaleidoscope includes styles for <a href="http://codeseven.github.io/toastr/">Toastr</a>, a javascript library for Growl type non-blocking notifications.</p>
+
+  <p>The theme styles the notifications as Bootstrap alerts. In the example they appear inside the example container, but under regular use they should appear fixed on any of the viewport corners. See the library documentation.</p>
+
+  <div class="bs-example">
+    <div class="toast-top-right" aria-live="polite" role="alert">
+      <div class="toast toast-success" style="display: block;">
+        <div class="toast-title">
+          Title
+        </div>
+        <div class="toast-message">
+          Have fun storming the castle!
+        </div>
+      </div>
+
+      <div class="toast toast-success" style="display: block;">
+        <button type="button" class="toast-close-button" role="button">×</button>
+        <div class="toast-message">
+          Are you the six fingered man?
+        </div>
+      </div>
+
+      <div class="toast toast-success" style="display: block;">
+        <div class="toast-progress" style="width: 11.48%;"></div>
+        <div class="toast-message">
+          My name is Inigo Montoya. <a href="#">You killed my father</a>. Prepare to die!
+        </div>
+      </div>
+
+      <div class="toast toast-info" style="display: block;">
+        <div class="toast-message">
+          Are you the six fingered man?
+        </div>
+      </div>
+
+      <div class="toast toast-warning" style="display: block;">
+        <div class="toast-message">
+          Inconceivable!
+        </div>
+      </div>
+
+      <div class="toast toast-error" style="display: block;">
+        <div class="toast-message">
+          I do not think that means what you think it means.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+        </main>
+
+        <aside class="col-md-3" role="complementary">
+
+          
+
+          
+
+          
+
+          
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+  <ul class="nav bs-docs-sidenav">
+    
+      <li>
+        <a href="#extras-overview">Overview</a>
+        
+      </li>
+    
+      <li>
+        <a href="#buttons">Buttons</a>
+        
+          <ul class="nav">
+            
+              <li><a href="#buttons-inverted">Inverted buttons</a></li>
+            
+              <li><a href="#buttons-circular">Circular buttons</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#breadcrumbs">Breadcrumbs</a>
+        
+      </li>
+    
+      <li>
+        <a href="#labels">Labels</a>
+        
+          <ul class="nav">
+            
+              <li><a href="#labels-ribbon">Ribbon labels</a></li>
+            
+              <li><a href="#labels-ribbon-corner">Corner ribbon labels</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#navs">Navs</a>
+        
+          <ul class="nav">
+            
+              <li><a href="#tabs">Tabs</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#tables">Tables</a>
+        
+          <ul class="nav">
+            
+              <li><a href="#tables-sortable">Sortable</a></li>
+            
+              <li><a href="#tables-celled">Columns</a></li>
+            
+              <li><a href="#tables-filled">Filled</a></li>
+            
+              <li><a href="#tables-inverted">Inverted</a></li>
+            
+              <li><a href="#tables-complex">Complex</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#containers">Containers</a>
+        
+          <ul class="nav">
+            
+              <li><a href="#jumbotron">Jumbotron</a></li>
+            
+              <li><a href="#blankslate">Blankslate</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#fontawesome">Font awesome</a>
+        
+      </li>
+    
+      <li>
+        <a href="#selectize">Selectize</a>
+        
+      </li>
+    
+      <li>
+        <a href="#toastr">Toastr</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+          
+
+        </aside>
+
+      </div>
+    </div>
+
+    <footer id="global-footer">
+  <div class="inner">
+
+    <p>Built with <i class="icon icon-heart"><span class="text-hide">love</span></i> (and code) by the Mosaiqo Team.</p>
+
+    <a class="mosaiqo" rel="author" href="http://mosaiqo.com">Mosaiqo</a>
+
+    <small>
+      © Mosaiqo, All rights reserved.<br />
+      Code licensed under MIT License, documentation under CC BY 3.0.<br />
+      Documentation based on the original <a href="http://getbootstrap.com/">Bootstrap docs</a>, with some adaptations.<br />
+      Icons from <a href=" http://fontawesome.io">Font Awesome</a>. Web fonts from <a href="https://www.google.com/fonts">Google</a>.
+    </small>
+
+  </div>
+</footer>
+
+
+  </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.1/toastr.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.6.1/holder.min.js"></script>
+<script src="assets/vendor/highlight.js/highlight.pack.js"></script>
+<script src="assets/js/docs.js"></script>
+
+</body>
+</html>

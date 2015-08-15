@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Kaleidoscope</title>
+<meta name="description" content="Kaleidoscope is an open source Bootstrap theme, with some extensions inspired on other UI kits, like Semantic-UI, PureCss and others." />
+
+
+<link rel="stylesheet" href="assets/css/kaleidoscope.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/vendor/highlight.js/styles/solarized_dark.css">
+
+
+</head>
+<body class="home">
+  <div class="wrapper">
+
+    <header id="global-header">
+  <h1>
+    <a href="index.html">
+      Mosaiqo theme
+    </a>
+  </h1>
+
+  
+  <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+  
+
+
+  <nav>
+    <ul>
+      <li><a href="css.html" class="">CSS</a></li>
+      <li><a href="components.html" class="">Components</a></li>
+      <li><a href="javascript.html" class="">Javascript</a></li>
+      <li><a href="extras.html" class="">Extras</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    
+
+<div id="download">
+
+  <a href="releases/kaleidoscope-0.0.1.zip" class="btn btn-lg">
+    <i class="icon icon-download"></i>
+    Download v.0.0.1
+  </a>
+
+</div>
+
+
+<ul class="list-inline share">
+  <li>
+    <a class="github-button" href="https://github.com/mosaiqo/kaleidoscope" data-icon="octicon-star" data-count-href="/mosaiqo/kaleidoscope/stargazers" data-count-api="/repos/mosaiqo/kaleidoscope#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mosaiqo/kaleidoscope on GitHub">Star</a>
+  </li>
+  <li>
+    <a class="github-button" href="https://github.com/mosaiqo/kaleidoscope/fork" data-icon="octicon-git-branch" data-count-href="/mosaiqo/kaleidoscope/network" data-count-api="/repos/mosaiqo/kaleidoscope#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork mosaiqo/kaleidoscope on GitHub">Fork</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/mosaiqoweb" class="twitter-follow-button" data-show-count="false">Follow @mosaiqoweb</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+  </li>
+</ul>
+
+
+<div id="intro" class="content-block container-fluid">
+  <div class="inner row">
+
+    <div class="col-sm-4">
+      <img src="assets/images/home/bootstrap.png" alt="Bootstrap" class="img-responsive" />
+      <h3>Bootstrap</h3>
+      <p>Not just a bootstrap theme. Kaleidoscope adds some variations to the Bootstrap components, adds some new ones inspired on other great UI toolkits like Semantic-UI or PureCSS, and integrates some other libraries like Fontawesome.</p>
+    </div>
+
+    <div class="col-sm-4">
+    <img src="assets/images/home/stylus.png" alt="Stylus" class="img-responsive" />
+      <h3>Built with Stylus</h3>
+      <p>Implemented using Stylus, an expressive, robust, feature-rich CSS preprocessor.</p>
+      <p>Built on top of <a href="https://github.com/maxmx/bootstrap-stylus">Bootstrap Stylus</a>.</p>
+    </div>
+
+    <div class="col-sm-4">
+    <img src="assets/images/home/customize.png" alt="Customizable" class="img-responsive" />
+      <h3>Customizable</h3>
+      <p>Everything is defined using variables, so the theme can be easily customised, from the color and dimensions, to the included elements.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="install" class="content-block">
+  <div class="inner">
+    <h2>Install</h2>
+
+    <h3>Manually</h3>
+    <p>Download the latest release and copy the CSS and font files to your own project.</p>
+
+    <h3 id="bower">Bower</h3>
+
+<pre><code class="language-bash">$ bower install kaleidoscope --save</code></pre>
+
+
+  </div>
+</div>
+
+
+<div id="usage" class="content-block">
+  <div class="inner">
+    <h2>Usage</h2>
+
+    <p>The bower package includes source stylus files and the built CSS file. The built CSS file includes all the components.</p>
+
+    <p>To customize the theme, import the main stylus file, located at <code>src/index.styl</code>, overriding any component parameter before the import. See the <code>config</code> directory for a reference of what can be overrided. There's no need to alter any file inside the <code>config</code> directory, just define the variables before importing Kaleidoscope and the new values will be applied.</p>
+
+    <p>To create a custom buid ommiting some of the components, set to <code>false</code> any of the import directives defined in <code>src/import-config.styl</code>. Again, there's no need to alter the package files, just declare the variables before importing it.</p>
+
+<pre><code class="language-stylus">// Bower packages directory
+$vendorPath = &#39;assets/vendor/&#39;
+
+// Override anything you want or disable components
+$fontsPath         = &#39;../fonts/&#39;
+$import-glyphicons = false
+
+@import $vendorPath + &#39;kaleidoscope/src/index.styl&#39;</code></pre>
+
+
+  </div>
+</div>
+
+
+<div id="opensource" class="content-block">
+  <div class="inner jumbotron">
+      <h3>Open source</h3>
+      <p>Kaleidoscope is Free &amp; Open Source, released under the MIT license.</p>
+      <p>The project is hosted on <a href="https://github.com/mosaiqo/kaleidoscope">Github</a> and open to feedback and contributions.</p>
+      <p>Give us some feedback and contribute to the project forking the repository and sending us a pull request.</p>
+  </div>
+</div>
+
+
+<!--
+- usage instructions (stylus) (no need to bootstrap.css)
+- customisation options
+
+- Mosaiqo
+-->
+
+
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <footer id="global-footer">
+  <div class="inner">
+
+    <p>Built with <i class="icon icon-heart"><span class="text-hide">love</span></i> (and code) by the Mosaiqo Team.</p>
+
+    <a class="mosaiqo" rel="author" href="http://mosaiqo.com">Mosaiqo</a>
+
+    <small>
+      © Mosaiqo, All rights reserved.<br />
+      Code licensed under MIT License, documentation under CC BY 3.0.<br />
+      Documentation based on the original <a href="http://getbootstrap.com/">Bootstrap docs</a>, with some adaptations.<br />
+      Icons from <a href=" http://fontawesome.io">Font Awesome</a>. Web fonts from <a href="https://www.google.com/fonts">Google</a>.
+    </small>
+
+  </div>
+</footer>
+
+
+  </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.1/toastr.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.6.1/holder.min.js"></script>
+<script src="assets/vendor/highlight.js/highlight.pack.js"></script>
+<script src="assets/js/docs.js"></script>
+
+</body>
+</html>
