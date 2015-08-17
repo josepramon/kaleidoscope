@@ -8,6 +8,12 @@ table-colored-valiant($bgCol, $col=#fff)
   th
     background-color: darken($bgCol, 8%)
 
+
+  &.table-striped
+    > tbody > tr:nth-of-type(even) td
+      background-color darken($bgCol, 6%)
+
+
   &.table-hover
     > tbody > tr:hover
         td
